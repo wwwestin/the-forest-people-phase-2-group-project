@@ -3,7 +3,6 @@ import Header from "./Header";
 import Navbar from "./Navbar";
 import NationalParksContainer from "./NationalParksContainer";
 
-
 function App() {
 
     return (

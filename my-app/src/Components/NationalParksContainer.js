@@ -12,7 +12,6 @@ function NationalParksContainer() {
     useEffect(() => {
         fetch(BASE_URL + limitNum)
             .then(res => {
-
                 return res.json()
             })
             .then(data => {
@@ -33,10 +32,12 @@ function NationalParksContainer() {
     })
 
 
-    return <div className="cards-container">
-        {nationalParkComponents}
-        <button onClick={() => setLimitNum(limitNum => limitNum + 9)}>LoadMore</button>
-    </div>
+    return (
+        <div className="cards-container">
+            {nationalParkComponents}
+            <button onClick={() => setLimitNum(limitNum => limitNum + 9)}>LoadMore</button>
+        </div>
+    )
 }
 
 export default NationalParksContainer;

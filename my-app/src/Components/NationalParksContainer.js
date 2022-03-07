@@ -8,6 +8,7 @@ function NationalParksContainer() {
 
     const [parks, setParks] = useState([])
     const [limitNum, setLimitNum] = useState(9)
+    const [plannedParks, setPlannedParks] = useState([])
 
     useEffect(() => {
         fetch(BASE_URL + limitNum)
@@ -20,14 +21,18 @@ function NationalParksContainer() {
             })
     }, [limitNum])
 
+    function addToTrip(park) {
+        const newPlannedParks = [...plannedParks, park]
+        setPlannedParks(newPlannedParks)
+    }
+
     const nationalParkComponents = parks.map(park => {
 
         return (
             <NationalPark
                 key={park.id}
-                name={park.fullName}
-                imageUrl={park.images[0].url}
-                imageAlt={park.images[0].altText}
+                park={park}
+                handleClick={addToTrip}
             />
         )
     })

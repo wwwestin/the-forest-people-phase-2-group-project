@@ -1,11 +1,43 @@
-import React from "react";
+import React, { useState, useEffect} from "react";
+import MyNationalPark from "./MyNationalPark";
+
+const url = "http://localhost:8000/posts"
 
 
 
 function WhereIveBeen() {
+
+    const [parks, setParks] = useState([])
+
+
+    useEffect(() => {
+        fetch(url)
+            .then(res => {
+                return res.json()
+            })
+            .then(data => {
+                const parksIBeenTo = data.filter(park => park.haveBeen === "true")
+                setParks(parksIBeenTo)
+            })
+    }, [])
+
+
+    const nationalParkComponents = parks.map(park => {
+
+        return (
+            <MyNationalPark
+                key={park.id}
+                name={park.fullName}
+                imageUrl={park.images[0].url}
+                imageAlt={park.images[0].altText}
+            />
+        )
+    })
+
+
     return (
-        <div>
-            <header>TEST AGAIN</header>
+        <div className="cards-container">
+            {nationalParkComponents}
         </div>
     )
 

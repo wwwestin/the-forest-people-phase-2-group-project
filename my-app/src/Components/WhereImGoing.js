@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import ParkDetailsCard from "./ParkDetailsCard";
 
 
-const url = "http://localhost:8000/posts"
+const url = "http://localhost:8000/parks"
 
 
 function WhereImGoing() {
@@ -14,26 +14,30 @@ function WhereImGoing() {
 
     useEffect(() => {
         fetch(url)
-            .then(res => {
-                return res.json()
-            })
+            .then(res => res.json())
             .then(data => {
-                setParks(data)
+                const parksToReview = data.filter(park => park.haveBeen === "false")
+                setParks(parksToReview)
             })
     }, [])
 
+    // debugger
+    // const parksFilterHaveBeen = parks.filter(park => park.haveBeen.includes("false"))
+
     const nationalParkComponents = parks.map(park => {
+        console.log(park)
 
         return (
             <ParkDetailsCard
                 key={park.id}
-                // name={park.fullName}
-                // imageUrl={park.images[0].url}
-                // imageAlt={park.images[0].altText}
+                name={park.fullName}
+                imageUrl={park.images[0].url}
+                imageAlt={park.images[0].altText}
                 park={park}
             />
         )
-    })
+    }
+    )
 
 
     return (

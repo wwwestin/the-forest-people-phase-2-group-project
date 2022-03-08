@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Chicle&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -17,20 +19,80 @@ code {
   flex-wrap: wrap;
   width: 90%;
   margin: 0 auto;
+  justify-content: space-between;
 }
 
 .national-park-card {
-    display: flex;
-    width: 30%;
-    height: 300px;
-    flex-direction: column;
-    overflow: hidden;
-    border: 1px solid;
-    text-align: center;
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  overflow: hidden;
+  border: 5px solid #BC6C25;
+  text-align: center;
+  margin-bottom: 25px;
+  border-radius: 9px;
+  color: #606C38;
+}
+
+.card-title{
+  margin: 0;
+  padding: 8px;
+  background: #BC6C25;
+  color: white;
+  flex-grow: 1;
 }
 
 .card-image {
+  height: 300px;;
+}
+
+.card-image > img{
   height: 100%;
   width: 100%;
-  object-fit: contain;
+  object-fit: fill;
 }
+
+
+
+body {
+  background-color: #FEFAE0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #283618;
+  font-family: 'Chicle', sans-serif;
+  letter-spacing: 2px;
+  border-bottom: 11px solid #BC6C25;
+  text-align: center;
+  background: #DDA15E;
+}
+
+
+  .header > h1 {
+    font-size: 3em;
+    text-shadow: -2px 2px #bc6c25, -4px 4px #dda15e, -8px 8px #606c38;
+  }
+
+  .header > img {
+    height: 50px;
+    margin-left: 14px;
+  }
+
+  #load-button {
+    width: 100%;
+    font-size: 16px;
+    padding-top: 12x;
+    line-height: 38px;
+    background: #283618;
+    color: #FEFAE0;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+  }
+
+  #load-button:hover {
+    cursor: pointer;
+  }

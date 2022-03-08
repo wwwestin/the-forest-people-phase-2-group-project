@@ -3,6 +3,7 @@ import Select from 'react-select'
 import axios from 'axios'
 
 
+
 export default class DropDown extends Component {
 
   constructor(props){
@@ -39,9 +40,10 @@ export default class DropDown extends Component {
     return (
       <div>
         <Select options={this.state.selectOptions} onChange={this.handleChange.bind(this)} />
-        <p>You have selected <strong>{this.state.id}</strong></p>
+        
       </div>
     )
   }
 }
 
+<p>You have selected <strong>{this.state.id}</strong></p>

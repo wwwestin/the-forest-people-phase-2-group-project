@@ -8,6 +8,7 @@ function NationalParksContainer() {
 
     const [parks, setParks] = useState([])
     const [limitNum, setLimitNum] = useState(9)
+   
 
     useEffect(() => {
         fetch(BASE_URL + limitNum)
@@ -18,6 +19,10 @@ function NationalParksContainer() {
                 setParks(data.data)
             })
     }, [limitNum])
+
+  
+   
+
 
     const nationalParkComponents = parks.map(park => {
 

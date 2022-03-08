@@ -27,6 +27,7 @@ function NationalParksContainer() {
                 name={park.fullName}
                 imageUrl={park.images[0].url}
                 imageAlt={park.images[0].altText}
+                park={park}
             />
         )
     })

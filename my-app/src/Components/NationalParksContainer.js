@@ -20,24 +20,7 @@ function NationalParksContainer() {
             })
     }, [limitNum])
 
-    function addToTrip(park) {
-        // const newPlannedParks = [...plannedParks, park]
-        // setPlannedParks(newPlannedParks)
-
-        
-        
-        fetch("http://localhost:8000/parks", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                Accept: "application/json",
-            },
-            body: JSON.stringify(park)
-        }    
-        )
-        }
-    
-
+  
    
 
 

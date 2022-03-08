@@ -8,7 +8,7 @@ function NationalPark({ imageUrl, imageAlt, name, park }) {
 
         const newPark = {...park, haveBeen : "false"}
 
-        console.log(newPark)
+        // console.log(newPark)
 
         fetch(url, {
             method: "POST",
@@ -21,12 +21,14 @@ function NationalPark({ imageUrl, imageAlt, name, park }) {
     }
 
     return (
-        <div onClick={() => handleClick(park)} className="national-park-card">
+        <div  className="national-park-card">
             <h2 className="card-title">{name}</h2>
 
             <div className="card-image">
                 <img src={imageUrl} alt={imageAlt}></img>
             </div>
+            <button onClick={() => handleClick(park)} className="add-to-my-trip">Add to my trip</button>
+
 
         </div>
     )

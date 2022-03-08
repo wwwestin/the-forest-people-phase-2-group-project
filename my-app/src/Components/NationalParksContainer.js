@@ -33,12 +33,10 @@ function NationalParksContainer() {
     })
 
 
-    return (
-        <div className="cards-container">
-            {nationalParkComponents}
-            <button onClick={() => setLimitNum(limitNum => limitNum + 9)}>LoadMore</button>
-        </div>
-    )
+    return <div className="cards-container">
+        {nationalParkComponents}
+        <button id="load-button" onClick={() => setLimitNum(limitNum => limitNum + 9)}>LoadMore</button>
+    </div>
 }
 
 export default NationalParksContainer;

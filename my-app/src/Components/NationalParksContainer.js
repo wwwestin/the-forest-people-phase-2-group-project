@@ -12,7 +12,6 @@ function NationalParksContainer() {
     useEffect(() => {
         fetch(BASE_URL + limitNum)
             .then(res => {
-
                 return res.json()
             })
             .then(data => {

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Select from 'react-select'
 import axios from 'axios'
 
+
 export default class DropDown extends Component {
 
   constructor(props){
@@ -18,11 +19,10 @@ export default class DropDown extends Component {
     const data = res.data['data']
 
     const options = data.map(park => ({
-      "value" : park.id,
+      "value" : park.fullName,
       "label" : park.states,
     }))
     
-
     this.setState({selectOptions: options})
   }
 
@@ -35,10 +35,11 @@ export default class DropDown extends Component {
   }
 
   render() {
-    
+    console.log(this.state.selectOptions)
     return (
       <div>
         <Select options={this.state.selectOptions} onChange={this.handleChange.bind(this)} />
+        <p>You have selected <strong>{this.state.id}</strong></p>
       </div>
     )
   }

@@ -46,19 +46,19 @@ function NationalParksContainer() {
         return (
             <NationalPark
                 key={park.id}
+                name={park.fullName}
+                imageUrl={park.images[0].url}
+                imageAlt={park.images[0].altText}
                 park={park}
-                handleClick={addToTrip}
             />
         )
     })
 
 
-    return (
-        <div className="cards-container">
-            {nationalParkComponents}
-            <button onClick={() => setLimitNum(limitNum => limitNum + 9)}>LoadMore</button>
-        </div>
-    )
+    return <div className="cards-container">
+        {nationalParkComponents}
+        <button id="load-button" onClick={() => setLimitNum(limitNum => limitNum + 9)}>LoadMore</button>
+    </div>
 }
 
 export default NationalParksContainer;

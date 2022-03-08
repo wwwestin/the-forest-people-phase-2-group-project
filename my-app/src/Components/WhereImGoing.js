@@ -1,31 +1,45 @@
-import React, { useEffect, useState } from "react";
-import ParkDetailsCard from "./ParkDetailsCard";
+import React, { useState, useEffect } from "react";
+import MyNationalPark from "./MyNationalPark"
 
 
-const WhereImGoing = () => {
+const url = "http://localhost:8000/posts"
 
-    const [plannedTrip, setPlannedTrip] = useState([])
-    console.log(plannedTrip)
+
+function WhereImGoing() {
+
+
+    const [parks, setParks] = useState([])
+
+
     useEffect(() => {
-        fetch("http://localhost:8000/parks")
-            .then(res => res.json())
-            .then(data => setPlannedTrip(data))
+        fetch(url)
+            .then(res => {
+                return res.json()
+            })
+            .then(data => {
+                setParks(data)
+            })
     }, [])
 
+    const nationalParkComponents = parks.map(park => {
 
-    const mapPlannedTrip = plannedTrip.map(park => {
         return (
-            <ParkDetailsCard key={park.id} park={park} />
+            <MyNationalPark
+                key={park.id}
+                name={park.fullName}
+                imageUrl={park.images[0].url}
+                imageAlt={park.images[0].altText}
+            />
         )
     })
 
-    // console.log(plannedTrip)
 
     return (
-        <div>
-            {mapPlannedTrip}
+        <div className="cards-container">
+            {nationalParkComponents}
         </div>
     )
 }
+
 
 export default WhereImGoing

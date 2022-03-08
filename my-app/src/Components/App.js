@@ -17,7 +17,7 @@ function App() {
             <Navbar />
             <Routes>
                 <Route exact path="/" element={<NationalParksContainer />} />
-                <Route path="/where-im-going" element={<WhereImGoing />} />
+                <Route path="/where-im-going" element= {<WhereImGoing />} />
                 <Route path="/where-ive-been" element={<WhereIveBeen />} />
             </Routes>
         </Router>

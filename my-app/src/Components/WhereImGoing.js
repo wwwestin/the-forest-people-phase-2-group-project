@@ -19,7 +19,7 @@ function WhereImGoing() {
                 const parksToReview = data.filter(park => park.haveBeen === "false")
                 setParks(parksToReview)
             })
-    }, [])
+    }, [parks])
 
     // debugger
     // const parksFilterHaveBeen = parks.filter(park => park.haveBeen.includes("false"))

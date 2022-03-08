@@ -6,7 +6,7 @@ function Header() {
     return (
         <div className = "header">
             <h1>Road Trippin'</h1>
-            <img src={Caravan}/>
+            <img src={Caravan} alt="test"/>
         </div>
     )
 }

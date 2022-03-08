@@ -21,7 +21,7 @@ function NationalPark({ imageUrl, imageAlt, name, park }) {
     }
 
     return (
-        <div className="national-park-card">
+        <div onClick={() => handleClick(park)} className="national-park-card">
             <h2 className="card-title">{name}</h2>
 
             <div className="card-image">

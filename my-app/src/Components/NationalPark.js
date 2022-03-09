@@ -5,7 +5,7 @@ const url = "http://localhost:8000/parks"
 function NationalPark({ imageUrl, imageAlt, name, park }) {
 
     function addToTrip(park) {
-        const newPark = {...park, haveBeen : "false"}
+        const newPark = {...park, haveBeen : false}
     
         fetch(url, {
             method: "POST",

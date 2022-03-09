@@ -91,7 +91,6 @@ body {
     color: #FEFAE0;
     font-weight: bold;
     border: none;
-    border-radius: 5px;
   }
 
   .national-park-detail-card > button {
@@ -99,12 +98,21 @@ body {
     box-shadow: -1px -1px 10px black;
   }
 
+  button.orange {
+    background: #BC6C25;
+  }
+
   .national-park-detail-card > button:hover{
     box-shadow: 1px 1px 10px black;
   }
   
   button:hover {
+    opacity: .9;
     cursor: pointer;
+  }
+
+  button:active {
+    opacity: 1;
   }
 
   .national-park-detail-card {
@@ -115,6 +123,7 @@ body {
     border: 5px solid #BC6C25;
     border-radius: 9px;
     margin: 0 auto;
+    margin-bottom: 20px;
   }
 
   .card-detail-section {
@@ -205,4 +214,37 @@ body {
   
   .card-detail-section.no-padding {
     padding-left: 0px
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    background: #DDA15E;
+    border-bottom: 11px solid #BC6C25;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+  }
+
+nav li {
+    flex-grow: 1;
+    text-align: center;
+    list-style: none;
+    align-self: center;
+    line-height: 4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  nav li:hover{
+    text-shadow: -2px 2px #bc6c25, -3px 3px #dda15e, -4px 4px #606c38;
+    cursor: pointer;
+  }
+
+  nav li:active {
+    text-shadow: none;
+  }
+
+  nav li a {
+    color: #283618;
+    text-decoration: none;
   }

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import NationalPark from "./NationalPark";
+import DropDown from "./DropDown";
 
 const BASE_URL = 'https://developer.nps.gov/api/v1/parks?api_key=3nGt9ZQTH0fW8byyMhNt9bA1avBgXX7gbGuT7Rt4&limit='
 
@@ -39,6 +40,7 @@ function NationalParksContainer() {
 
 
     return <div className="cards-container">
+        <DropDown setParks={setParks} />
         {nationalParkComponents}
         <button id="load-button" onClick={() => setLimitNum(limitNum => limitNum + 9)}>LoadMore</button>
     </div>

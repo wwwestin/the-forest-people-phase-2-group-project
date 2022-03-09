@@ -1,6 +1,6 @@
 import React, { useState, useEffect} from "react";
+import ParkDetailsCard from "./ParkDetailsCard";
 // import MyNationalPark from "./MyNationalPark";
-import ReviewDetailsCard from "./ReviewDetailsCard";
 
 const url = "http://localhost:8000/parks"
 
@@ -26,7 +26,7 @@ function WhereIveBeen() {
     const nationalParkComponents = parks.map(park => {
 
         return (
-            <ReviewDetailsCard
+            <ParkDetailsCard
                 key={park.id}
                 name={park.fullName}
                 imageUrl={park.images[0].url}

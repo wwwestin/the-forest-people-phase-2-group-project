@@ -1,49 +1,56 @@
-import React, { Component } from 'react'
+import {useState, useEffect} from "react";
+import NationalPark from "./NationalPark";
 import Select from 'react-select'
-import axios from 'axios'
 
 
+function DropDown({setParks}) {
+  const [selectedState, setSelectedState] = useState([]);
 
-export default class DropDown extends Component {
+  useEffect(() => {
+    fetch('https://developer.nps.gov/api/v1/parks?api_key=3nGt9ZQTH0fW8byyMhNt9bA1avBgXX7gbGuT7Rt4&states=')
+        .then(res => {
+            return res.json()
+        })
+        .then(data => {
+            setSelectedState(data.data)
+        })
+  }, [])
 
-  constructor(props){
-    super(props)
-    this.state = {
-      selectOptions: [],
-      id: "",
-      name: ''
-    }
+  
+  const showStates = selectedState.map(park => ({
+     "value" : park.id,
+     "label" : park.states
+  }))
+
+  function handleStateChange(event) {
+    setParks({id:event.value, states:event.label})
+    //setParks(event.target.value);
   }
+  // const parksToDisplay = showStates.filter((park) => {
+  //   if (selectedState === "KY") return true;
+  
+  //   return park.states === selectedState;
+  // });
 
- async getOptions(){
-    const res = await axios.get('https://developer.nps.gov/api/v1/parks?api_key=3nGt9ZQTH0fW8byyMhNt9bA1avBgXX7gbGuT7Rt4')
-    const data = res.data['data']
-
-    const options = data.map(park => ({
-      "value" : park.fullName,
-      "label" : park.states,
-    }))
-    
-    this.setState({selectOptions: options})
-  }
-
-  handleChange(e){
-   this.setState({id:e.value, name:e.label})
-  }
-
-  componentDidMount(){
-      this.getOptions()
-  }
-
-  render() {
-    console.log(this.state.selectOptions)
-    return (
-      <div>
-        <Select options={this.state.selectOptions} onChange={this.handleChange.bind(this)} />
-        
-      </div>
-    )
-  }
+  return (
+    <div className ="parkList">
+      <div className="Filter">
+        <Select options={showStates} onChange={handleStateChange}/>
+        <p>You have selected {selectedState.id}{selectedState.states}</p>
+        </div>
+      <ul className="NationalPark">
+        {selectedState.map((park) => (
+          <NationalPark
+          key={park.id}
+          name={park.fullName}
+          imageUrl={park.images[0].url}
+          imageAlt={park.images[0].altText}
+          park={park} />
+        ))}
+      </ul>
+    </div>
+  );
 }
+ export default DropDown;
 
-{/* <p>You have selected <strong>{this.state.id}</strong></p> */}
+

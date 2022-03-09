@@ -46,4 +46,4 @@ export default class DropDown extends Component {
   }
 }
 
-<p>You have selected <strong>{this.state.id}</strong></p>
+{/* <p>You have selected <strong>{this.state.id}</strong></p> */}

@@ -24,27 +24,57 @@ function ParkDetailsCard({ park }) {
     }
 
     return (
-        <div className="national-park-card">
+        <div className="national-park-detail-card">
             <h2 className="card-title">{park.fullName}</h2>
             <img className="card-image" src={park.images[0].url} alt={park.images[0].altText}></img>
-            <button onClick={() => leaveReview(park)}className="already-been">Leave a review</button>            <p className="card-description">{park.description}</p>
-            <ul className="activities">
-                <li>{park.activities[0].name}</li>
-                <li>{park.activities[1].name}</li>
-                <li>{park.activities[2].name}</li>
-                <li>{park.activities[3].name}</li> 
-            </ul>
-            <p className="fees">{park.fees}</p>
-            <p className="weather-info">{park.weatherInfo}</p>
+            
+            <button onClick={() => leaveReview(park)}className="already-been">Leave a review</button>
+            
+            <section className="card-detail-section">
+                <h4>About This Beautiful Park</h4>
+                <p className="card-description">{park.description}</p>
+            </section>
+            
+            <section className="card-detail-section">
+                <h4>Things to get in to</h4>
+                <ul className="activities">
+                    <li>{park.activities[0].name}</li>
+                    <li>{park.activities[1].name}</li>
+                    <li>{park.activities[2].name}</li>
+                    <li>{park.activities[3].name}</li> 
+                </ul>
+            </section>
+            
+            <section className="card-detail-section">
+                <h4>Cost</h4>
+                {park.entranceFees.map(fee => {
+                   return (
+                    <div className="card-detail-cost-row">
+                        <p>Cost: ${fee.cost}</p>
+                        <p>{fee.description}</p>                        
+                    </div>
+                    )
+                })}
+            </section>
+            
+            <section className="card-detail-section">
+                <h4>Weather</h4>
+                <p className="weather-info">{park.weatherInfo}</p>
+            </section>
+            
+            <section className="card-detail-section no-padding">
+            <div className="additional-images-carousel">
+                {park.images.slice(1).map(image => <img className="card-image" src={image.url} alt={image.altText}></img>)}
+            </div>
+            </section>
 
-            <div className="additional-images">
-                <img className="smaller-images" src={park.images[1].url} alt={park.images[1].altText}></img>
-                <img className="smaller-images" src={park.images[2].url} alt={park.images[2].altText}></img>
-            </div>
-            <div className="contact-information">
-                <p>{park.contacts.phoneNumbers.phoneNumber}</p>
-                <h4 className="card-link">{park.directionsUrl}</h4>
-            </div>
+            <footer className="card-detail-section">
+                <h4>Contact</h4>
+                <div className="contact-information">
+                    <p>{park.contacts.phoneNumbers[0].phoneNumber}</p>
+                    <p className="card-link">{park.directionsUrl}</p>
+                </div>
+            </footer>
         </div>
     )
 }

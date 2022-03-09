@@ -40,6 +40,7 @@ code {
   background: #BC6C25;
   color: white;
   flex-grow: 1;
+  text-align: center;
 }
 
 .card-image {
@@ -81,7 +82,7 @@ body {
     margin-left: 14px;
   }
 
-  #load-button {
+  button {
     width: 100%;
     font-size: 16px;
     padding-top: 12x;
@@ -93,6 +94,109 @@ body {
     border-radius: 5px;
   }
 
-  #load-button:hover {
+  .national-park-detail-card > button {
+    border-radius: 0px;
+    box-shadow: -1px -1px 10px black;
+  }
+
+  .national-park-detail-card > button:hover{
+    box-shadow: 1px 1px 10px black;
+  }
+  
+  button:hover {
     cursor: pointer;
+  }
+
+  .national-park-detail-card {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    overflow: hidden;
+    border: 5px solid #BC6C25;
+    border-radius: 9px;
+    margin: 0 auto;
+  }
+
+  .card-detail-section {
+    padding: 9px 0 0 9px;
+  }
+
+  .card-detail-section > h4 ~ * {
+    padding-left: 9px;
+  }
+
+  .card-detail-section > h4 {
+    margin: 0;
+    text-align: left;
+    text-transform: uppercase;
+    color: #bc6d2d;
+    font-size: 1.4rem;
+    font-family: Georgia, sans-serif;
+    letter-spacing: 2px;
+    margin-top: 10px;
+  }
+
+  ul.activities{
+    list-style: none;
+    display: flex;
+  }
+
+  ul.activities li{
+    margin-right: 5px;
+    padding-right: 4px;
+    border-right: 1px solid black
+  }
+
+  ul.activities li:last-child{
+    border-right: none;
+  }
+
+  .card-detail-cost-row{
+    display: flex;
+  }
+
+  .card-detail-cost-row p:first-child{
+    margin-right: 5px;
+    padding-right: 4px;
+    border-right: 1px solid black
+  }
+
+
+  .additional-images-carousel {
+    display: flex;
+    overflow: scroll;
+  }
+
+  footer.card-detail-section {
+    padding: 0;
+    background: #BC6C25;
+    color: #FEFAE0;
+  }
+
+  footer.card-detail-section > h4 {
+    color: #FEFAE0;
+    padding-left: 10px;
+  }
+
+  .contact-information {
+    display: flex;
+    width: 100%;
+    background: #BC6C25;
+    justify-content: space-between;
+  }
+
+  .contact-information p {
+    text-align: center;
+  }
+
+  .contact-information p:first-child {
+    flex-grow: 1;
+  }
+
+  .contact-information p:last-child {
+    flex-grow: 2;
+  }
+  
+  .card-detail-section.no-padding {
+    padding-left: 0px
   }

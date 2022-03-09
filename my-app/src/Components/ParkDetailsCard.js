@@ -28,7 +28,7 @@ function ParkDetailsCard({ park }) {
             <h2 className="card-title">{park.fullName}</h2>
             <img className="card-image" src={park.images[0].url} alt={park.images[0].altText}></img>
             
-            <button onClick={() => leaveReview(park)}className="already-been">Leave a review</button>
+            {!park.haveBeen && <button onClick={() => leaveReview(park)}className="already-been">Leave a review</button>}
             
             <section className="card-detail-section">
                 <h4>About This Beautiful Park</h4>
@@ -50,7 +50,7 @@ function ParkDetailsCard({ park }) {
                 {park.entranceFees.map(fee => {
                    return (
                     <div className="card-detail-cost-row">
-                        <p>Cost: ${fee.cost}</p>
+                        <p>${fee.cost}</p>
                         <p>{fee.description}</p>                        
                     </div>
                     )
@@ -72,7 +72,7 @@ function ParkDetailsCard({ park }) {
                 <h4>Contact</h4>
                 <div className="contact-information">
                     <p>{park.contacts.phoneNumbers[0].phoneNumber}</p>
-                    <p className="card-link">{park.directionsUrl}</p>
+                    <a className="card-link" href={park.directionsUrl} target="_blank">{park.directionsUrl}</a>
                 </div>
             </footer>
         </div>

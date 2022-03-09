@@ -17,7 +17,7 @@ function WhereIveBeen() {
                 return res.json()
             })
             .then(data => {
-                const parksIBeenTo = data.filter(park => park.haveBeen === "true")
+                const parksIBeenTo = data.filter(park => park.haveBeen)
                 setParks(parksIBeenTo)
             })
     }, [])

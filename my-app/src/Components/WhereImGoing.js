@@ -16,7 +16,7 @@ function WhereImGoing() {
         fetch(url)
             .then(res => res.json())
             .then(data => {
-                const parksToReview = data.filter(park => park.haveBeen === "false")
+                const parksToReview = data.filter(park => !park.haveBeen)
                 setParks(parksToReview)
             })
     }, [])

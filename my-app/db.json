@@ -211,7 +211,7 @@
       "weatherInfo": "There are four distinct seasons in Central Kentucky. However, temperature and weather conditions can vary widely within those seasons. Spring and Fall are generally pleasant with frequent rain showers. Summer is usually hot and humid. Winter is moderately cold with mixed precipitation.",
       "name": "Abraham Lincoln Birthplace",
       "designation": "National Historical Park",
-      "haveBeen": "false"
+      "haveBeen": false
     },
     {
       "id": "6DA17C86-088E-4B4D-B862-7C1BD5CF236B",

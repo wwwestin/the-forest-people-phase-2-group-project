@@ -23,6 +23,27 @@ function ParkDetailsCard({ park }) {
 
     }
 
+    
+
+    const activitiesSlice = (parkToMap) => {
+        console.log(parkToMap)
+        if( parkToMap.activities.length <= 4) {
+            return park.activities
+        } else {
+            return parkToMap.activities.slice(0,4)
+        }
+    }
+
+    let activities = activitiesSlice(park)
+    console.log(activities)
+
+
+    const parkActivities = activities.map(activity => {
+        return (
+            <li>{activity.name}</li>
+        )
+    })
+
     return (
         <div className="national-park-detail-card">
             <h2 className="card-title">{park.fullName}</h2>
@@ -38,10 +59,7 @@ function ParkDetailsCard({ park }) {
             <section className="card-detail-section">
                 <h4>Things to get in to</h4>
                 <ul className="activities">
-                    <li>{park.activities[0].name}</li>
-                    <li>{park.activities[1].name}</li>
-                    <li>{park.activities[2].name}</li>
-                    <li>{park.activities[3].name}</li> 
+                    {parkActivities} 
                 </ul>
             </section>
             
@@ -72,7 +90,7 @@ function ParkDetailsCard({ park }) {
                 <h4>Contact</h4>
                 <div className="contact-information">
                     <p>{park.contacts.phoneNumbers[0].phoneNumber}</p>
-                    <a className="card-link" href={park.directionsUrl} target="_blank">{park.directionsUrl}</a>
+                    <a className="card-link" href={park.directionsUrl} target="_blank" rel="noreferrer">{park.directionsUrl}</a>
                 </div>
             </footer>
         </div>

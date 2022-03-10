@@ -81,7 +81,7 @@ useEffect(() => {
     return (
     <div className="cards-container">
         <div className="search-bar">
-            <Search className = "search" onSearch={HandleSearch} onChange={setSearch} search={search}/>
+            <Search onSearch={HandleSearch} onChange={setSearch} search={search}/>
         </div>    
         {focus ? <NationalParkFocus focus={focus} onClick={setFocus}/> : null}
 

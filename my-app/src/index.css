@@ -250,3 +250,32 @@ nav li {
     color: #283618;
     text-decoration: none;
   }
+
+  .star-container {
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  .star {
+    list-style: none;
+    margin-right: 20px;
+    font-size: 26px;
+    color: gold;
+    text-shadow: 1px 0px 0px black;
+  }
+
+  .detail-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .stupid-banner{
+    height: 40px;
+    width: 100%;
+    background-image: url("./caravan-solid.svg");
+    background-repeat: repeat-x;
+    margin-bottom: 25px;
+  }

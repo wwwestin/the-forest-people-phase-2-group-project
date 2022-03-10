@@ -2,9 +2,6 @@ import React from "react";
 import NationalPark from "./NationalPark";
 
 
-
-
-
 function NationalParksContainer({parks}) {
   
     return (

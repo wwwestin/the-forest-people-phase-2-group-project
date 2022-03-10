@@ -2,11 +2,11 @@ import React from "react";
 
 const url = "http://localhost:8000/parks"
 
-function NationalPark({ imageUrl, imageAlt, name, park }) {
+function NationalPark({ imageUrl, imageAlt, name, park, onFocus }) {
 
     function addToTrip(park) {
-        const newPark = {...park, haveBeen : false}
-    
+        const newPark = { ...park, haveBeen: false }
+
         fetch(url, {
             method: "POST",
             headers: {
@@ -19,7 +19,7 @@ function NationalPark({ imageUrl, imageAlt, name, park }) {
 
     function leaveReview(park) {
 
-        const reviewPark ={...park, haveBeen: "true"}
+        const reviewPark = { ...park, haveBeen: "true" }
 
         fetch(url, {
             method: "POST",
@@ -32,14 +32,42 @@ function NationalPark({ imageUrl, imageAlt, name, park }) {
     }
 
     return (
-        <div  className="national-park-card">
+        <div className="national-park-card"
+            onClick={(e) => {
+                e.stopPropagation()
+                onFocus(park)
+            }}
+        >
+
             <h2 className="card-title">{name}</h2>
 
             <div className="card-image">
                 <img src={imageUrl} alt={imageAlt}></img>
             </div>
-            <button onClick={() => addToTrip(park)} className="orange">Add to my trip</button>
-            <button onClick={() => leaveReview(park)}className="already-been">Leave a review</button>
+
+            {window.location.pathname === "/" ? <button className="orange"
+                onClick={(e) => {
+                    e.stopPropagation()
+                    addToTrip(park)
+                }}>
+                Add to my trip
+            </button> : null}
+
+            {window.location.pathname === "/" ? <button className="already-been"
+                onClick={(e) => {
+                    e.stopPropagation()
+                    leaveReview(park)
+                }}>
+                I've already been!
+            </button> : null}
+            {park.starRating ? 
+                <ul className="star-container">
+                        {
+                        park.starRating.map((star) => {
+                            return <li className="star">{star}</li>
+                        })
+                        }
+                </ul> : null}
 
         </div>
     )

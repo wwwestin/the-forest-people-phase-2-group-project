@@ -1,8 +1,10 @@
 import React from "react";
+import CardStatus from "./CardStatus";
+
 
 const url = "http://localhost:8000/parks"
 
-function NationalPark({ imageUrl, imageAlt, name, park, onFocus }) {
+function NationalPark({ imageUrl, imageAlt, name, park, onFocus, handleClick }) {
 
     function addToTrip(park) {
         const newPark = { ...park, haveBeen: false }
@@ -15,6 +17,7 @@ function NationalPark({ imageUrl, imageAlt, name, park, onFocus }) {
             body: JSON.stringify(newPark)
         }
         )
+        handleClick(newPark);
     }
 
     function leaveReview(park) {
@@ -45,29 +48,42 @@ function NationalPark({ imageUrl, imageAlt, name, park, onFocus }) {
                 <img src={imageUrl} alt={imageAlt}></img>
             </div>
 
-            {window.location.pathname === "/" ? <button className="orange"
-                onClick={(e) => {
-                    e.stopPropagation()
-                    addToTrip(park)
-                }}>
-                Add to my trip
-            </button> : null}
+            {window.location.pathname === "/" ?  
+            <CardStatus park={park} onReview={leaveReview}>
+                <button className="orange"
+                    onClick={(e) => {
+                        e.stopPropagation()
+                        addToTrip(park)
+                    }}>
+                    Add to my trip
+                </button>
+                <button className="already-been"
+                    onClick={(e) => {
+                        e.stopPropagation()
+                        leaveReview(park)
+                    }}>
+                    I've already been!
+                </button>
+            </CardStatus> :
+                null
+            }
 
-            {window.location.pathname === "/" ? <button className="already-been"
-                onClick={(e) => {
-                    e.stopPropagation()
-                    leaveReview(park)
-                }}>
-                I've already been!
-            </button> : null}
-            {park.starRating ? 
+            {/* {window.location.pathname === "/" ? 
+                park.starRating ? 
                 <ul className="star-container">
                         {
                         park.starRating.map((star) => {
                             return <li className="star">{star}</li>
                         })
                         }
-                </ul> : null}
+                </ul> : <button className="already-been"
+                onClick={(e) => {
+                    e.stopPropagation()
+                    leaveReview(park)
+                }}>
+                I've already been!
+            </button>: null
+            } */}
 
         </div>
     )

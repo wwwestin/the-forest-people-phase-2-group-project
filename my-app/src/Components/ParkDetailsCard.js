@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-
+import StarRating from "./StarRating";
 
 
 
 function ParkDetailsCard({ park, clearCard, onReview, onRemove }) {
 
 
-    const [stars, setStars] = useState(["☆", "☆", "☆", "☆", "☆"]);
+    // const [stars, setStars] = useState(["☆", "☆", "☆", "☆", "☆"]);
 
     function markComplete(park) {
 
@@ -43,14 +43,14 @@ function ParkDetailsCard({ park, clearCard, onReview, onRemove }) {
         )
     })
 
-    function handleClick(index) {
-        let review = [];
-        for (let i = 0; i <= 4; i++) {
-            i <= index ? review.push("★") : review.push("☆")
-        }
-        setStars(review)
-        onReview(review, park.id);
-    }
+    // function handleClick(index) {
+    //     let review = [];
+    //     for (let i = 0; i <= 4; i++) {
+    //         i <= index ? review.push("★") : review.push("☆")
+    //     }
+    //     setStars(review)
+    //     onReview(review, park.id);
+    // }
 
     return (
         <div className="national-park-detail-card">
@@ -61,17 +61,13 @@ function ParkDetailsCard({ park, clearCard, onReview, onRemove }) {
             <img className="card-image" src={park.images[0].url} alt={park.images[0].altText}></img>
             <section className="card-detail-section">
                 {window.location.pathname === "/where-ive-been" ? (park.starRating ? <h4>Review</h4> : <h4>Leave a review</h4>) : null}
-                {window.location.pathname === "/where-ive-been" ? (<ul className="star-container">
-                    {park.starRating ?
-                        park.starRating.map((star) => {
-                            return <li className="star">{star}</li>
-                        })
-                        :
-                        stars.map((star, index) => {
-                            return <li onClick={() => handleClick(index)} className="star">{star}</li>
-                        })}
-
-                </ul>) : null}
+                {window.location.pathname === "/where-ive-been" ? 
+                    <StarRating 
+                        rating={park.starRating} 
+                        onReview={onReview}
+                        id={park.id}
+                    /> : 
+                    null}
             </section>
 
             <section className="card-detail-section">

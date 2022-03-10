@@ -298,6 +298,7 @@ nav li {
     width: 100%;
   }
 
+
   .national-park-card > .star-container {
     display: flex;
     padding-left: 0;
@@ -305,4 +306,9 @@ nav li {
     margin-top: 0;
     padding: 4px 10px 0;
     background: #BC6C25;
+  }
+
+  #search{
+    width: 99.4%;
+    text-align: center;
   }

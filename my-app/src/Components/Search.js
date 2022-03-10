@@ -10,7 +10,7 @@ function Search({onSearch, onChange, search}) {
       <input
         type="text"
         id="search"
-        placeholder="search parks"
+        placeholder="Search Parks by State"
         value={search}
         onChange={(e) => onChange(e.target.value)}
       />

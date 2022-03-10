@@ -1,7 +1,8 @@
 import React from "react";
 import Caravan from "../caravan-solid.svg"
 
-function Header() {
+
+function Header({onSearch}) {
 
     return (
         <div className = "header">
@@ -13,6 +14,3 @@ function Header() {
 
 export default Header;
 
-
-
-//Michael

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import NationalPark from "./NationalPark";
-import DropDown from "./DropDown";
 import NationalParkFocus from "./NationalParkFocus";
+import Search from "./Search";
+
 
 const BASE_URL = 'https://developer.nps.gov/api/v1/parks?api_key=3nGt9ZQTH0fW8byyMhNt9bA1avBgXX7gbGuT7Rt4&limit='
 
@@ -12,6 +13,7 @@ function NationalParksContainer() {
     const [limitNum, setLimitNum] = useState(9)
     const [focus, setFocus] = useState(null)
     const [databaseParks, setDataBaseParks] = useState([]) 
+    const [search, setSearch] = useState("");
    
 
     useEffect(() => {
@@ -24,7 +26,7 @@ function NationalParksContainer() {
             })
     }, [limitNum])
 
-    useEffect(() => {
+useEffect(() => {
         fetch('http://localhost:8000/parks')
         .then(res=>res.json())
         .then(data => setDataBaseParks(data));
@@ -34,6 +36,11 @@ function NationalParksContainer() {
     function addToTrip(park){
         setDataBaseParks([...databaseParks, park])
     }
+
+    const displayedParks = parks.filter((park) => park.states.toLowerCase().includes(search.toLowerCase()))
+    console.log(displayedParks)
+   
+
 
     const parksToRender = parks.map(park => {
         if(databaseParks.some(dbPark => dbPark.id === park.id)){
@@ -61,6 +68,9 @@ function NationalParksContainer() {
 
     return (
     <div className="cards-container">
+        <div className="search-bar">
+            <Search onSearch={setSearch}/>
+        </div>    
         {focus ? <NationalParkFocus focus={focus} onClick={setFocus}/> : null}
 
         {nationalParkComponents}

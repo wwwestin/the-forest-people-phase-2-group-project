@@ -9,7 +9,6 @@ function ParkDetailsCard({ park, clearCard, onReview, onRemove }) {
     // const [stars, setStars] = useState(["☆", "☆", "☆", "☆", "☆"]);
 
     function markComplete(park) {
-        // Array.map(obj => if(obj.id === id){ {…obj, hasBeen: true} }
 
         const parkEdit = { ...park, haveBeen: true }
 

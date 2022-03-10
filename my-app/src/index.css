@@ -279,3 +279,16 @@ nav li {
     background-repeat: repeat-x;
     margin-bottom: 25px;
   }
+
+
+  .added-to-trip-banner{
+    width: 100%;
+    font-size: 16px;
+    padding-top: 12x;
+    line-height: 38px;
+    background: #BC6C25;
+    color: #FEFAE0;
+    font-weight: bold;
+    border: none;
+    text-transform: uppercase;
+  }

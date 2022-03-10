@@ -11,6 +11,7 @@ function NationalParksContainer() {
     const [parks, setParks] = useState([])
     const [limitNum, setLimitNum] = useState(9)
     const [focus, setFocus] = useState(null)
+    const [databaseParks, setDataBaseParks] = useState([]) 
    
 
     useEffect(() => {
@@ -23,11 +24,25 @@ function NationalParksContainer() {
             })
     }, [limitNum])
 
+    useEffect(() => {
+        fetch('http://localhost:8000/parks')
+        .then(res=>res.json())
+        .then(data => setDataBaseParks(data));
+    }, [])
+
   
-   
+    function addToTrip(park){
+        setDataBaseParks([...databaseParks, park])
+    }
 
+    const parksToRender = parks.map(park => {
+        if(databaseParks.some(dbPark => dbPark.id === park.id)){
+            return databaseParks.find(dbPark => dbPark.id === park.id)
+        }
+        return park
+    })
 
-    const nationalParkComponents = parks.map(park => {
+    const nationalParkComponents = parksToRender.map(park => {
 
         return (
             <NationalPark
@@ -37,6 +52,7 @@ function NationalParksContainer() {
                 imageAlt={park.images[0].altText}
                 park={park}
                 onFocus={setFocus}
+                handleClick={addToTrip}
             />
         )
     })

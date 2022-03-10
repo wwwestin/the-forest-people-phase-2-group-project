@@ -24,10 +24,16 @@ function WhereImGoing() {
 
     // debugger
     // const parksFilterHaveBeen = parks.filter(park => park.haveBeen.includes("false"))
+    
+    function handleParkRemove(removedPark) {
+        
+        const newParks = parks.filter(park => park.id !== removedPark.id)
+        setParks(newParks)
+
+    }
+
 
     const nationalParkComponents = parks.map(park => {
-        console.log(park)
-
         return (
             <NationalPark
                 key={park.id}
@@ -42,9 +48,10 @@ function WhereImGoing() {
     )
 
 
+
     return (
         <div className="cards-container">
-            {focus ? <NationalParkFocus focus={focus}  onClick={setFocus}/> : null}
+            {focus ? <NationalParkFocus focus={focus}  onClick={setFocus} onRemove={handleParkRemove} /> : null}
             {nationalParkComponents}
         </div>
     )

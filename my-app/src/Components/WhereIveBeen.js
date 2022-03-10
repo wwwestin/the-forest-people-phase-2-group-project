@@ -67,7 +67,7 @@ function WhereIveBeen() {
 
     return (
         <div className="cards-container">
-            {focus ? <NationalParkFocus focus={focus}  onClick={setFocus}/> : null}
+            {focus ? <NationalParkFocus focus={focus}  onClick={setFocus} onReview={handleReview}/> : null}
             {nationalParkComponents}
         </div>
     )

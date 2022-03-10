@@ -2,7 +2,7 @@ import React from "react"
 import ParkDetailsCard from "./ParkDetailsCard"
 
 
-function NationalParkFocus({focus, onClick}) {
+function NationalParkFocus({focus, onClick, onRemove, onReview}) {
     return (
         <div className="detail-container">
             <ParkDetailsCard park={focus} clearCard={onClick}/>

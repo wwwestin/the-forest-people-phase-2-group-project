@@ -45,7 +45,7 @@ function NationalPark({ imageUrl, imageAlt, name, park, onFocus }) {
                 <img src={imageUrl} alt={imageAlt}></img>
             </div>
 
-            {window.location.pathname === "/where-im-going" ? <button className="orange"
+            {window.location.pathname === "/" ? <button className="orange"
                 onClick={(e) => {
                     e.stopPropagation()
                     addToTrip(park)
@@ -53,13 +53,21 @@ function NationalPark({ imageUrl, imageAlt, name, park, onFocus }) {
                 Add to my trip
             </button> : null}
 
-            {window.location.pathname === "/where-ive-been" ? null : <button className="already-been"
+            {window.location.pathname === "/" ? <button className="already-been"
                 onClick={(e) => {
                     e.stopPropagation()
                     leaveReview(park)
                 }}>
-                Leave a review
-            </button>}
+                I've already been!
+            </button> : null}
+            {park.starRating ? 
+                <ul className="star-container">
+                        {
+                        park.starRating.map((star) => {
+                            return <li className="star">{star}</li>
+                        })
+                        }
+                </ul> : null}
 
         </div>
     )

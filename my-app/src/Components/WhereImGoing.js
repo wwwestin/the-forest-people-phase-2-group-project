@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-// import MyNationalPark from "./MyNationalPark"
-import ParkDetailsCard from "./ParkDetailsCard";
+import NationalParkFocus from "./NationalParkFocus";
+import NationalPark from "./NationalPark";
 
 
 const url = "http://localhost:8000/parks"
@@ -10,6 +10,7 @@ function WhereImGoing() {
 
 
     const [parks, setParks] = useState([])
+    const [focus, setFocus] = useState(null)
 
 
     useEffect(() => {
@@ -28,12 +29,13 @@ function WhereImGoing() {
         console.log(park)
 
         return (
-            <ParkDetailsCard
+            <NationalPark
                 key={park.id}
                 name={park.fullName}
                 imageUrl={park.images[0].url}
                 imageAlt={park.images[0].altText}
                 park={park}
+                onFocus={setFocus}
             />
         )
     }
@@ -42,6 +44,7 @@ function WhereImGoing() {
 
     return (
         <div className="cards-container">
+            {focus ? <NationalParkFocus focus={focus}  onClick={setFocus}/> : null}
             {nationalParkComponents}
         </div>
     )

@@ -211,6 +211,7 @@
       "weatherInfo": "There are four distinct seasons in Central Kentucky. However, temperature and weather conditions can vary widely within those seasons. Spring and Fall are generally pleasant with frequent rain showers. Summer is usually hot and humid. Winter is moderately cold with mixed precipitation.",
       "name": "Abraham Lincoln Birthplace",
       "designation": "National Historical Park",
+
       "haveBeen": true,
       "starRating": [
         "★",
@@ -666,6 +667,7 @@
       "weatherInfo": "Located on Mount Desert Island in Maine, Acadia experiences all four seasons. Summer temperatures range from 45-90F (7-30C). Fall temperatures range from 30-70F (-1-21C). Typically the first frost is in mid-October and first snowfall begins in November and can continue through April with an average accumulation of 73 inches (185 cm). Winter temperatures range from 14-35F (-10 - 2C). Spring temperatures range from 30-70F (-1-21C).",
       "name": "Acadia",
       "designation": "National Park",
+
       "haveBeen": "true",
       "starRating": [
         "★",
@@ -930,133 +932,200 @@
       "weatherInfo": "Be prepared for hot, humid weather. The historic homes are not air conditioned. While the visitor center remains open all year, the historic homes are closed from November 1 through April 30.",
       "name": "Adams",
       "designation": "National Historical Park",
-      "haveBeen": false
+      "haveBeen": true,
+      "starRating": [
+        "☆",
+        "☆",
+        "☆",
+        "☆",
+        "☆"
+      ]
     },
     {
-      "id": "61EC5C9A-1A38-4040-AE38-E62FD2A9A836",
-      "url": "https://www.nps.gov/biso/index.htm",
-      "fullName": "Big South Fork National River & Recreation Area",
-      "parkCode": "biso",
-      "description": "Encompassing 125,000 acres of the Cumberland Plateau, Big South Fork National River and Recreation Area protects the free-flowing Big South Fork of the Cumberland River and its tributaries. The area boasts miles of scenic gorges and sandstone bluffs, is rich with natural and historic features and has been developed to provide visitors with a wide range of outdoor recreational activities.",
-      "latitude": "36.5348388",
-      "longitude": "-84.66506688",
-      "latLong": "lat:36.5348388, long:-84.66506688",
+      "id": "1A47416F-DAA3-4137-9F30-14AF86B4E547",
+      "url": "https://www.nps.gov/afam/index.htm",
+      "fullName": "African American Civil War Memorial",
+      "parkCode": "afam",
+      "description": "Over 200,000 African-American soldiers and sailors served in the U.S. Army and Navy during the Civil War. Their service helped to end the war and free over four million slaves. The African American Civil War Memorial honors their service and sacrifice.",
+      "latitude": "38.9166",
+      "longitude": "-77.026",
+      "latLong": "lat:38.9166, long:-77.026",
+      "activities": [
+        {
+          "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+          "name": "Guided Tours"
+        },
+        {
+          "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+          "name": "Self-Guided Tours - Walking"
+        }
+      ],
+      "topics": [
+        {
+          "id": "28AEAE85-9DDA-45B6-981B-1CFCDCC61E14",
+          "name": "African American Heritage"
+        },
+        {
+          "id": "BEB7E470-13B2-4E00-84B2-0402D98DAF69",
+          "name": "Monuments and Memorials"
+        },
+        {
+          "id": "27BF8807-54EA-4A3D-B073-AA7AA361CD7E",
+          "name": "Wars and Conflicts"
+        },
+        {
+          "id": "A8E54356-20CD-490E-B34D-AC6A430E6F47",
+          "name": "Civil War"
+        }
+      ],
+      "states": "DC",
+      "contacts": {
+        "phoneNumbers": [
+          {
+            "phoneNumber": "2024266841",
+            "description": "",
+            "extension": "",
+            "type": "Voice"
+          }
+        ],
+        "emailAddresses": [
+          {
+            "description": "",
+            "emailAddress": "national_mall@nps.gov"
+          }
+        ]
+      },
+      "entranceFees": [
+        {
+          "cost": "0.00",
+          "description": "No Entrance Fee to enter park site.",
+          "title": "No Entrance Fee"
+        }
+      ],
+      "entrancePasses": [
+        {
+          "cost": "0.00",
+          "description": "No Passes",
+          "title": "No Passes"
+        }
+      ],
+      "fees": [],
+      "directionsInfo": "The memorial is located at the corner of Vermont Avenue, 10th St, and U Street NW, near the U Street/African-American Civil War Memorial/Cardozo Metro Station.",
+      "directionsUrl": "http://www.nps.gov/afam/planyourvisit/directions.htm",
+      "operatingHours": [
+        {
+          "exceptions": [],
+          "description": "The African American Civil War Memorial is always open to the public.  There are no Rangers on duty at this site (except for special events). The United States Park Police are on duty 24 hours a day.",
+          "standardHours": {
+            "wednesday": "All Day",
+            "monday": "All Day",
+            "thursday": "All Day",
+            "sunday": "All Day",
+            "tuesday": "All Day",
+            "friday": "All Day",
+            "saturday": "All Day"
+          },
+          "name": "Always Open"
+        }
+      ],
+      "addresses": [
+        {
+          "postalCode": "20001",
+          "city": "Washington",
+          "stateCode": "DC",
+          "line1": "1925 Vermont Avenue Northwest",
+          "type": "Physical",
+          "line3": "",
+          "line2": ""
+        },
+        {
+          "postalCode": "20024",
+          "city": "Washington",
+          "stateCode": "DC",
+          "line1": "900 Ohio Drive SW",
+          "type": "Mailing",
+          "line3": "",
+          "line2": ""
+        }
+      ],
+      "images": [
+        {
+          "credit": "NPS Photo",
+          "title": "African American Civil War Statue",
+          "altText": "Site Statue",
+          "caption": "A poignant reminder of our nations past",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C816B50-1DD8-B71B-0BF380049FB6B6A2.jpg"
+        },
+        {
+          "credit": "NPS Photo",
+          "title": "African American Sailor",
+          "altText": "African American Sailor Close up",
+          "caption": "African American Civil War Sailor",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C816C97-1DD8-B71B-0B7B2A0DD09C870A.jpg"
+        },
+        {
+          "credit": "NPS Photo",
+          "title": "African American Soldier",
+          "altText": "African American Soldier Close up",
+          "caption": "African American Civil War Soldier",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C816DF6-1DD8-B71B-0B5D792777650EA4.jpg"
+        },
+        {
+          "credit": "NPS / Liz Macro",
+          "title": "African American Civil War Memorial",
+          "altText": "Bronze statue of African American Civil War soldiers.",
+          "caption": "African American Civil War Memorial",
+          "url": "https://www.nps.gov/common/uploads/structured_data/1DA05382-E7D7-BD05-0A4A7ED42138D49D.jpg"
+        },
+        {
+          "credit": "NPS / Liz Macro",
+          "title": "African American Civil War Memorial",
+          "altText": "Bronze statue of African American Civil War soldier.",
+          "caption": "African American Civil War Memorial",
+          "url": "https://www.nps.gov/common/uploads/structured_data/1E29A16A-C551-66A4-9DABCD61403D61C7.jpg"
+        }
+      ],
+      "weatherInfo": "Washington DC gets to see all four seasons. Humidity will make the temps feel hotter in summer and colder in winter. Spring (March - May) Temp: Average high is 65.5 degrees with a low of 46.5 degrees Summer (June - August) Temp: Average high is 86 degrees with a low of 68.5 degrees Fall (September - November) Temp: Average high is 68 degrees with a low of 51.5 degrees Winter (December - February) Temp: Average high is 45 degrees with a low of 30 degrees (Source: www.usclimatedata.com)",
+      "name": "African American Civil War Memorial",
+      "designation": "",
+      "haveBeen": true,
+      "starRating": [
+        "☆",
+        "☆",
+        "☆",
+        "☆",
+        "☆"
+      ]
+    },
+    {
+      "id": "E6E1D22A-7A89-47F8-813C-B611059A8CF9",
+      "url": "https://www.nps.gov/afbg/index.htm",
+      "fullName": "African Burial Ground National Monument",
+      "parkCode": "afbg",
+      "description": "African Burial Ground is the oldest and largest known excavated burial ground in North America for both free and enslaved Africans. It protects the historic role slavery played in building New York",
+      "latitude": "40.71452681",
+      "longitude": "-74.00447358",
+      "latLong": "lat:40.71452681, long:-74.00447358",
       "activities": [
         {
           "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
           "name": "Arts and Culture"
         },
         {
-          "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
-          "name": "Astronomy"
-        },
-        {
-          "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
-          "name": "Stargazing"
-        },
-        {
-          "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
-          "name": "Biking"
-        },
-        {
-          "id": "299CB934-88DC-474F-A33D-E43E29A149C2",
-          "name": "Mountain Biking"
-        },
-        {
-          "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
-          "name": "Boating"
-        },
-        {
-          "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
-          "name": "Camping"
-        },
-        {
-          "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
-          "name": "Backcountry Camping"
-        },
-        {
-          "id": "80229F2D-972E-40A8-8860-232551CC30D6",
-          "name": "Horse Camping (see also Horse/Stock Use)"
-        },
-        {
-          "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
-          "name": "RV Camping"
-        },
-        {
-          "id": "B12FAAB9-713F-4B38-83E4-A273F5A43C77",
-          "name": "Climbing"
-        },
-        {
-          "id": "87D3B1CD-3903-4561-ABB1-2DD870C43F2F",
-          "name": "Rock Climbing"
-        },
-        {
-          "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
-          "name": "Fishing"
-        },
-        {
-          "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
-          "name": "Freshwater Fishing"
-        },
-        {
-          "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
-          "name": "Food"
-        },
-        {
-          "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
-          "name": "Picnicking"
-        },
-        {
-          "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
-          "name": "Hiking"
-        },
-        {
-          "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
-          "name": "Horse Trekking"
-        },
-        {
-          "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
-          "name": "Horseback Riding"
-        },
-        {
-          "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
-          "name": "Hunting and Gathering"
-        },
-        {
-          "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
-          "name": "Hunting"
-        },
-        {
-          "id": "4D224BCA-C127-408B-AC75-A51563C42411",
-          "name": "Paddling"
+          "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+          "name": "Guided Tours"
         },
         {
           "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
           "name": "Junior Ranger Program"
         },
         {
-          "id": "4D06CEED-90C6-4B69-B264-32CC90B69BA6",
-          "name": "Tubing"
-        },
-        {
-          "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
-          "name": "Swimming"
-        },
-        {
-          "id": "586B4949-8D1B-4F03-8F6D-D1FCFE01AEF4",
-          "name": "Pool Swimming"
-        },
-        {
-          "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
-          "name": "Wildlife Watching"
-        },
-        {
-          "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
-          "name": "Birdwatching"
-        },
-        {
           "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
           "name": "Park Film"
+        },
+        {
+          "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+          "name": "Museum Exhibits"
         },
         {
           "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
@@ -1069,155 +1138,219 @@
       ],
       "topics": [
         {
-          "id": "00F3C3F9-2D67-4802-81AE-CCEA5D3BA370",
-          "name": "Arts"
+          "id": "28AEAE85-9DDA-45B6-981B-1CFCDCC61E14",
+          "name": "African American Heritage"
         },
         {
-          "id": "9BD60DC0-C82B-42BA-A170-456B7423429D",
-          "name": "Photography"
+          "id": "7F81A0CB-B91F-4896-B9A5-41BE9A54A27B",
+          "name": "Archeology"
         },
         {
-          "id": "0B575E33-B68F-4F3D-998E-B03284606CF3",
-          "name": "Industry"
+          "id": "607D41B0-F830-4C07-A557-BCEF880A3929",
+          "name": "Burial, Cemetery and Gravesite"
         },
         {
-          "id": "BDC806A8-5470-4A8B-A0F9-CD804BE3028A",
-          "name": "Mining"
+          "id": "7F12224B-217A-4B07-A4A2-636B1CE7F221",
+          "name": "Colonization and Settlement"
         },
         {
-          "id": "27BF8807-54EA-4A3D-B073-AA7AA361CD7E",
-          "name": "Wars and Conflicts"
+          "id": "D9FC6D14-F8C7-4EBA-86EA-DFD99B6BB4F5",
+          "name": "Enslavement"
         },
         {
-          "id": "A8E54356-20CD-490E-B34D-AC6A430E6F47",
-          "name": "Civil War"
+          "id": "BEB7E470-13B2-4E00-84B2-0402D98DAF69",
+          "name": "Monuments and Memorials"
         },
         {
-          "id": "0D00073E-18C3-46E5-8727-2F87B112DDC6",
-          "name": "Animals"
+          "id": "40C0866A-3890-41A4-84CA-5935DEE181AE",
+          "name": "Social Movements"
         },
         {
-          "id": "957EF2BD-AC6C-4B7B-BD9A-87593ADC6691",
-          "name": "Birds"
+          "id": "846E5C56-E5AC-489C-B3BF-11F4C73F12C2",
+          "name": "Urban America"
         },
         {
-          "id": "04A39AB8-DD02-432F-AE5F-BA1267D41A0D",
-          "name": "Fire"
-        },
-        {
-          "id": "F0F97E32-2F29-41B4-AF98-9FBE8DAB36B1",
-          "name": "Geology"
-        },
-        {
-          "id": "94262026-92F5-48E9-90EF-01CEAEFBA4FF",
-          "name": "Grasslands"
-        },
-        {
-          "id": "A7359FC4-DAD8-45F5-AF15-7FF62F816ED3",
-          "name": "Night Sky"
-        },
-        {
-          "id": "E06F3C94-AC8A-4B1C-A247-8EBA8910D5EE",
-          "name": "Astronomy"
-        },
-        {
-          "id": "4244F489-6813-4B7A-9D0C-20CE098C8FFF",
-          "name": "Rock Landscapes and Features"
-        },
-        {
-          "id": "72E87FCE-B48F-48E8-8761-4849A79736AF",
-          "name": "Arches"
-        },
-        {
-          "id": "9C9FCBB6-360B-4743-8155-6F9341CBE01B",
-          "name": "Scenic Views"
-        },
-        {
-          "id": "5BE55D7F-BDB6-4E3D-AC35-2D8EBB974417",
-          "name": "Trails"
-        },
-        {
-          "id": "78E4F4AC-AF97-435A-8C2C-7FB8D67516ED",
-          "name": "Unique Species"
+          "id": "7DA81DAB-5045-4953-9C20-36590AD9FA95",
+          "name": "Women's History"
         }
       ],
-      "states": "KY,TN",
+      "states": "NY",
       "contacts": {
         "phoneNumbers": [
           {
-            "phoneNumber": "4235699778",
+            "phoneNumber": "2122384367",
             "description": "",
             "extension": "",
             "type": "Voice"
-          },
-          {
-            "phoneNumber": "4235695505",
-            "description": "",
-            "extension": "",
-            "type": "Fax"
           }
         ],
         "emailAddresses": [
           {
             "description": "",
-            "emailAddress": "biso_information@nps.gov"
+            "emailAddress": "african_burial_ground@nps.gov"
           }
         ]
       },
       "entranceFees": [
         {
           "cost": "0.00",
-          "description": "There are no entrance fees for Big South Fork NRRA.",
+          "description": "Admission to this park site is free of charge.",
           "title": "Entrance Fee"
         }
       ],
-      "entrancePasses": [],
+      "entrancePasses": [
+        {
+          "cost": "0.00",
+          "description": "There are no park-specific passes required or sold at this location.",
+          "title": "Park Specific Passes"
+        }
+      ],
       "fees": [],
-      "directionsInfo": "Please use the following link to learn more about how to get here from various locations.",
-      "directionsUrl": "http://www.nps.gov/biso/planyourvisit/directions.htm",
+      "directionsInfo": "The African Burial Ground National Monument is located on the first floor of the Ted Weiss Federal Building located at 290 Broadway in Lower Manhattan; close to Foley Square and just north of City Hall. Our visitor center is located mid-block on Broadway between the cross streets of Duane Street and Reade Streets.",
+      "directionsUrl": "http://www.nps.gov/afbg/planyourvisit/directions.htm",
       "operatingHours": [
         {
-          "exceptions": [],
-          "description": "The park is always open.",
+          "exceptions": [
+            {
+              "exceptionHours": {
+                "wednesday": "Closed",
+                "monday": "Closed",
+                "thursday": "Closed",
+                "sunday": "Closed",
+                "tuesday": "Closed",
+                "friday": "Closed",
+                "saturday": "Closed"
+              },
+              "startDate": "2022-11-24",
+              "name": "Thanksgiving Holiday Closure",
+              "endDate": "2022-11-24"
+            },
+            {
+              "exceptionHours": {
+                "wednesday": "Closed",
+                "monday": "Closed",
+                "thursday": "Closed",
+                "sunday": "Closed",
+                "tuesday": "Closed",
+                "friday": "Closed",
+                "saturday": "Closed"
+              },
+              "startDate": "2022-12-26",
+              "name": "Christmas Holiday Closure",
+              "endDate": "2022-12-26"
+            }
+          ],
+          "description": "INDOOR VISITOR CENTER AND MUSEUM",
           "standardHours": {
-            "wednesday": "All Day",
-            "monday": "All Day",
-            "thursday": "All Day",
-            "sunday": "All Day",
-            "tuesday": "All Day",
-            "friday": "All Day",
-            "saturday": "All Day"
+            "wednesday": "10:00AM - 4:00PM",
+            "monday": "Closed",
+            "thursday": "10:00AM - 4:00PM",
+            "sunday": "Closed",
+            "tuesday": "10:00AM - 4:00PM",
+            "friday": "10:00AM - 4:00PM",
+            "saturday": "10:00AM - 4:00PM"
           },
-          "name": "Park Operating Hours"
+          "name": "INDOOR VISITOR CENTER AND MUSEUM"
+        },
+        {
+          "exceptions": [
+            {
+              "exceptionHours": {
+                "wednesday": "Closed",
+                "monday": "Closed",
+                "thursday": "Closed",
+                "sunday": "Closed",
+                "tuesday": "Closed",
+                "friday": "Closed",
+                "saturday": "Closed"
+              },
+              "startDate": "2022-11-24",
+              "name": "Thanksgiving Holiday Closure",
+              "endDate": "2022-11-24"
+            },
+            {
+              "exceptionHours": {
+                "wednesday": "Closed",
+                "monday": "Closed",
+                "thursday": "Closed",
+                "sunday": "Closed",
+                "tuesday": "Closed",
+                "friday": "Closed",
+                "saturday": "Closed"
+              },
+              "startDate": "2022-12-26",
+              "name": "Christmas Holiday Closure",
+              "endDate": "2022-12-26"
+            }
+          ],
+          "description": "OUTDOOR MEMORIAL",
+          "standardHours": {
+            "wednesday": "10:00AM - 4:00PM",
+            "monday": "Closed",
+            "thursday": "10:00AM - 4:00PM",
+            "sunday": "Closed",
+            "tuesday": "10:00AM - 4:00PM",
+            "friday": "10:00AM - 4:00PM",
+            "saturday": "10:00AM - 4:00PM"
+          },
+          "name": "OUTDOOR MEMORIAL"
         }
       ],
       "addresses": [
         {
-          "postalCode": "37841",
-          "city": "Oneida",
-          "stateCode": "TN",
-          "line1": "4564 Leatherwood Road",
+          "postalCode": "10007",
+          "city": "New York",
+          "stateCode": "NY",
+          "line1": "African Burial Ground National Monument",
           "type": "Physical",
-          "line3": "",
-          "line2": ""
+          "line3": "1st Floor",
+          "line2": "290 Broadway"
         },
         {
-          "postalCode": "37841",
-          "city": "Oneida",
-          "stateCode": "TN",
-          "line1": "4564 Leatherwood Road",
+          "postalCode": "10005",
+          "city": "New York",
+          "stateCode": "NY",
+          "line1": "African Burial Ground NM",
           "type": "Mailing",
-          "line3": "",
-          "line2": ""
+          "line3": "26 Wall St",
+          "line2": "C/O Federal Hall National Memorial"
         }
       ],
       "images": [
         {
           "credit": "NPS Photo",
-          "title": "Big South Fork NRRA in Fall",
-          "altText": "Big South Fork NRRA in Fall",
-          "caption": "Big South Fork NRRA in Fall",
-          "url": "https://www.nps.gov/common/uploads/structured_data/3C793E18-1DD8-B71B-0B815C3EA6EF7F23.jpg"
+          "title": "African Burial Ground Memorial",
+          "altText": "African Burial Ground Memorial",
+          "caption": "African Burial Ground Memorial",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C8554EA-1DD8-B71B-0BE6FF3BF04C18B8.jpg"
+        },
+        {
+          "credit": "NPS Photo",
+          "title": "Visitor Center Entrance",
+          "altText": "Entrance to visitor center with four banners above doorway.",
+          "caption": "Entrance to the African Burial Ground National Monument visitor center.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/7DD7997F-1DD8-B71B-0B31BFA87CFF6B77.jpg"
+        },
+        {
+          "credit": "NPS Photo",
+          "title": "Outdoor Memorial Entrance",
+          "altText": "Outdoor memorial entrance with closed gate.",
+          "caption": "Outdoor memorial entrance with closed gate.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/7DE9E906-1DD8-B71B-0BE6C87ADBA53620.jpg"
+        },
+        {
+          "credit": "NPS Photo",
+          "title": "Memorial's circle of diaspora.",
+          "altText": "Memorial's circle of diaspora.",
+          "caption": "Memorial's circle of diaspora.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/7DF18622-1DD8-B71B-0BC858B0C844569E.jpg"
+        },
+        {
+          "credit": "NPS Photo",
+          "title": "Exhibits within visitor center.",
+          "altText": "Exhibits within visitor center.",
+          "caption": "Exhibits within visitor center.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/7DF85D09-1DD8-B71B-0BAB5B558B9CEAA9.jpg"
         }
       ],
       "weatherInfo": "The weather along the Cumberland Plateau can be best described as unpredictable. Each season brings its own weather patterns. Summers are generally hot and humid, with high temperatures sometimes eclipsing 90 degrees. The low temperatures in winter often dip below freezing. Spring sees the most amount of precipitation, but rainfall can occur in various amounts throughout the year.",
@@ -1421,6 +1554,7 @@
         "★",
         "★",
         "★",
+
         "☆",
         "☆"
       ]

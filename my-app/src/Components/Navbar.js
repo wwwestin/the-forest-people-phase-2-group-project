@@ -15,7 +15,9 @@ function Navbar() {
             <li>
                 <Link to="/where-ive-been">Where Ive Been</Link>
             </li>
+
             {/* <DropDown /> */}
+
         </nav>
     )
 }

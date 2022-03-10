@@ -2,7 +2,9 @@ import React, {useState} from "react";
 
 
 
-function ParkDetailsCard({ park, onReview }) {
+
+function ParkDetailsCard({ park, clearCard, onReview }) {
+
 
     const [stars, setStars] = useState(["☆","☆","☆","☆","☆"]);
 
@@ -54,7 +56,10 @@ function ParkDetailsCard({ park, onReview }) {
 
     return (
         <div className="national-park-detail-card">
-            <h2 className="card-title">{park.fullName}</h2>
+            <h2 className="card-title">
+                {park.fullName}
+                <button onClick={() => clearCard(null)}>X</button>
+            </h2>
             <img className="card-image" src={park.images[0].url} alt={park.images[0].altText}></img>
             <section className="card-detail-section">
                 {console.log(!park.starRating)}

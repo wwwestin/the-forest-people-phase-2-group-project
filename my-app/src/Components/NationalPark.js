@@ -67,6 +67,7 @@ function NationalPark({ imageUrl, imageAlt, name, park, onFocus }) {
                             return <li className="star">{star}</li>
                         })
                         }
+                </ul> : null}
 
         </div>
     )

@@ -1,10 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
 
 
 
-function ParkDetailsCard({ park, clearCard }) {
 
-    
+function ParkDetailsCard({ park, clearCard, onReview }) {
+
+
+    const [stars, setStars] = useState(["☆","☆","☆","☆","☆"]);
 
     function leaveReview(park) {
         // Array.map(obj => if(obj.id === id){ {…obj, hasBeen: true} }
@@ -19,8 +21,6 @@ function ParkDetailsCard({ park, clearCard }) {
             body: JSON.stringify(parkEdit)
         }
         )
-
-
     }
 
     
@@ -44,6 +44,16 @@ function ParkDetailsCard({ park, clearCard }) {
         )
     })
 
+    function handleClick(index) {
+        console.log(index);
+        let review = [];
+        for(let i = 0; i <= 4; i++){
+            i <= index ? review.push("★") : review.push("☆")
+        }
+        setStars(review)
+        onReview(review, park.id);
+    }
+
     return (
         <div className="national-park-detail-card">
             <h2 className="card-title">
@@ -51,6 +61,22 @@ function ParkDetailsCard({ park, clearCard }) {
                 <button onClick={() => clearCard(null)}>X</button>
             </h2>
             <img className="card-image" src={park.images[0].url} alt={park.images[0].altText}></img>
+            <section className="card-detail-section">
+                {console.log(!park.starRating)}
+                {park.starRating ? <h4>Review</h4>  : <h4>Leave a review</h4>}
+                {console.log("this is what the star state looks like: ", stars)}
+                <ul className="star-container">
+                    {park.starRating ? 
+                         park.starRating.map((star) => {
+                            return <li className="star">{star}</li>
+                        })
+                        :
+                        stars.map((star, index) => {
+                            return <li onClick={() => handleClick(index)} className="star">{star}</li>
+                        })}
+                        
+                </ul>
+            </section>
             {park.haveBeen ? console.log("i have been") :  console.log('i aint been')}
             {park.haveBeen ? null :  <button onClick={() => leaveReview(park)}className="already-been">Leave a review</button>}
             

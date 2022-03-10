@@ -44,6 +44,7 @@ function NationalPark({ imageUrl, imageAlt, name, park, onFocus }) {
             <div className="card-image">
                 <img src={imageUrl} alt={imageAlt}></img>
             </div>
+
             {window.location.pathname === "/where-im-going" ? <button className="orange"
                 onClick={(e) => {
                     e.stopPropagation()
@@ -59,6 +60,13 @@ function NationalPark({ imageUrl, imageAlt, name, park, onFocus }) {
                 }}>
                 Leave a review
             </button>}
+            {park.starRating ? 
+                <ul className="star-container">
+                        {
+                        park.starRating.map((star) => {
+                            return <li className="star">{star}</li>
+                        })
+                        }
 
         </div>
     )

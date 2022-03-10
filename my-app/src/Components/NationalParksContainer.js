@@ -42,9 +42,11 @@ function NationalParksContainer() {
     })
 
 
+
     return (
     <div className="cards-container">
         {focus ? <NationalParkFocus focus={focus} onClick={setFocus}/> : null}
+
         {nationalParkComponents}
         <button id="load-button" onClick={() => setLimitNum(limitNum => limitNum + 9)}>LoadMore</button>
     </div>

@@ -39,8 +39,16 @@ function NationalPark({ imageUrl, imageAlt, name, park }) {
                 <img src={imageUrl} alt={imageAlt}></img>
             </div>
             <button onClick={() => addToTrip(park)} className="orange">Add to my trip</button>
-            <button onClick={() => leaveReview(park)}className="already-been">Leave a review</button>
-
+            {park.starRating ? 
+                <ul className="star-container">
+                        {
+                        park.starRating.map((star) => {
+                            return <li className="star">{star}</li>
+                        })
+                        }
+                </ul> :
+                <button onClick={() => leaveReview(park)}className="already-been">Leave a review</button>
+            }
         </div>
     )
 }

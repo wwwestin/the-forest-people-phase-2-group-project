@@ -6,8 +6,6 @@ import StarRating from "./StarRating";
 function ParkDetailsCard({ park, clearCard, onReview, onRemove }) {
 
 
-    // const [stars, setStars] = useState(["☆", "☆", "☆", "☆", "☆"]);
-
     function markComplete(park) {
 
         const parkEdit = { ...park, haveBeen: true }
@@ -42,15 +40,6 @@ function ParkDetailsCard({ park, clearCard, onReview, onRemove }) {
             <li>{activity.name}</li>
         )
     })
-
-    // function handleClick(index) {
-    //     let review = [];
-    //     for (let i = 0; i <= 4; i++) {
-    //         i <= index ? review.push("★") : review.push("☆")
-    //     }
-    //     setStars(review)
-    //     onReview(review, park.id);
-    // }
 
     return (
         <div className="national-park-detail-card">

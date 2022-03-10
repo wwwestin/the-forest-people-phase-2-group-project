@@ -20,7 +20,7 @@ function NationalPark({ imageUrl, imageAlt, name, park, onFocus, handleClick }) 
         handleClick(newPark);
     }
 
-    function leaveReview(park) {
+    function setToBeen(park) {
 
         const reviewPark = { ...park, haveBeen: "true" }
 
@@ -32,6 +32,16 @@ function NationalPark({ imageUrl, imageAlt, name, park, onFocus, handleClick }) 
             body: JSON.stringify(reviewPark)
         }
         )
+    }
+
+    function leaveReview(review, id){
+        fetch(`${url}/${id}`, {
+            method: 'PATCH',
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({starRating: review})
+        })
     }
 
     return (
@@ -60,7 +70,7 @@ function NationalPark({ imageUrl, imageAlt, name, park, onFocus, handleClick }) 
                 <button className="already-been"
                     onClick={(e) => {
                         e.stopPropagation()
-                        leaveReview(park)
+                        setToBeen(park)
                     }}>
                     I've already been!
                 </button>

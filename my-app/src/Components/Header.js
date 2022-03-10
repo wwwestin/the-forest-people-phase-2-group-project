@@ -2,7 +2,7 @@ import React from "react";
 import Caravan from "../caravan-solid.svg"
 
 
-function Header({onSearch}) {
+function Header() {
 
     return (
         <div className = "header">

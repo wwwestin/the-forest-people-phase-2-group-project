@@ -14,6 +14,7 @@ function NationalParksContainer() {
     const [focus, setFocus] = useState(null)
     const [databaseParks, setDataBaseParks] = useState([]) 
     const [search, setSearch] = useState("");
+    const [buttonNeeded, setButtonNeeded] = useState(true)
    
 
     useEffect(() => {
@@ -37,8 +38,19 @@ useEffect(() => {
         setDataBaseParks([...databaseParks, park])
     }
 
-    const displayedParks = parks.filter((park) => park.states.toLowerCase().includes(search.toLowerCase()))
-    console.log(displayedParks)
+
+    function HandleSearch(e) {
+        e.preventDefault()
+        fetch("https://developer.nps.gov/api/v1/parks?api_key=3nGt9ZQTH0fW8byyMhNt9bA1avBgXX7gbGuT7Rt4&limit=465")
+            .then(res => res.json())
+            .then(data => {
+                const displayedParks = data.data.filter((park) => park.states.toLowerCase().includes(search.toLowerCase()))
+                setParks(displayedParks)
+                setButtonNeeded(false)
+            })
+        
+    }
+
    
 
 
@@ -69,12 +81,12 @@ useEffect(() => {
     return (
     <div className="cards-container">
         <div className="search-bar">
-            <Search onSearch={setSearch}/>
+            <Search className = "search" onSearch={HandleSearch} onChange={setSearch} search={search}/>
         </div>    
         {focus ? <NationalParkFocus focus={focus} onClick={setFocus}/> : null}
 
         {nationalParkComponents}
-        <button id="load-button" onClick={() => setLimitNum(limitNum => limitNum + 9)}>LoadMore</button>
+        {buttonNeeded ? <button id="load-button" onClick={() => setLimitNum(limitNum => limitNum + 9)}>LoadMore</button> : null}
     </div>
     )
 }

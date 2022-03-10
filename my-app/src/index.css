@@ -279,3 +279,8 @@ nav li {
     background-repeat: repeat-x;
     margin-bottom: 25px;
   }
+
+
+  .search-bar{
+    width: 100%;
+  }

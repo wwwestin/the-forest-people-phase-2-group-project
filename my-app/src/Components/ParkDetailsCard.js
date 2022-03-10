@@ -2,7 +2,7 @@ import React from "react";
 
 
 
-function ParkDetailsCard({ park }) {
+function ParkDetailsCard({ park, clearCard }) {
 
     
 
@@ -46,7 +46,10 @@ function ParkDetailsCard({ park }) {
 
     return (
         <div className="national-park-detail-card">
-            <h2 className="card-title">{park.fullName}</h2>
+            <h2 className="card-title">
+                {park.fullName}
+                <button onClick={() => clearCard(null)}>X</button>
+            </h2>
             <img className="card-image" src={park.images[0].url} alt={park.images[0].altText}></img>
             {park.haveBeen ? console.log("i have been") :  console.log('i aint been')}
             {park.haveBeen ? null :  <button onClick={() => leaveReview(park)}className="already-been">Leave a review</button>}

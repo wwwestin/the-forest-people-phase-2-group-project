@@ -250,3 +250,17 @@ nav li {
     color: #283618;
     text-decoration: none;
   }
+
+  .star-container {
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  .star {
+    list-style: none;
+    margin-right: 20px;
+    font-size: 26px;
+    color: gold;
+    text-shadow: 1px 0px 0px black;
+  }

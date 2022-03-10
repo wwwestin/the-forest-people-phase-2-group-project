@@ -40,7 +40,7 @@ function NationalParksContainer() {
 
 
     return <div className="cards-container">
-        <DropDown setParks={setParks} />
+        {/* <DropDown setParks={setParks} /> */}
         {nationalParkComponents}
         <button id="load-button" onClick={() => setLimitNum(limitNum => limitNum + 9)}>LoadMore</button>
     </div>

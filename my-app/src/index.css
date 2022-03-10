@@ -264,3 +264,18 @@ nav li {
     color: gold;
     text-shadow: 1px 0px 0px black;
   }
+
+  .detail-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .stupid-banner{
+    height: 40px;
+    width: 100%;
+    background-image: url("./caravan-solid.svg");
+    background-repeat: repeat-x;
+    margin-bottom: 25px;
+  }

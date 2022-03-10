@@ -60,13 +60,6 @@ function NationalPark({ imageUrl, imageAlt, name, park, onFocus }) {
                 }}>
                 Leave a review
             </button>}
-            {park.starRating ? 
-                <ul className="star-container">
-                        {
-                        park.starRating.map((star) => {
-                            return <li className="star">{star}</li>
-                        })
-                        }
 
         </div>
     )

@@ -44,7 +44,7 @@ code {
 }
 
 .card-image {
-  height: 300px;;
+  height: 300px;
 }
 
 .card-image > img{
@@ -297,6 +297,16 @@ nav li {
   .search-bar{
     width: 100%;
     margin: 10px;
+  }
+
+
+  .national-park-card > .star-container {
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 4px 10px 0;
+    background: #BC6C25;
   }
 
   #search{

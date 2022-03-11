@@ -659,7 +659,726 @@
       "weatherInfo": "Located on Mount Desert Island in Maine, Acadia experiences all four seasons. Summer temperatures range from 45-90F (7-30C). Fall temperatures range from 30-70F (-1-21C). Typically the first frost is in mid-October and first snowfall begins in November and can continue through April with an average accumulation of 73 inches (185 cm). Winter temperatures range from 14-35F (-10 - 2C). Spring temperatures range from 30-70F (-1-21C).",
       "name": "Acadia",
       "designation": "National Park",
+      "haveBeen": "true",
+      "starRating": [
+        "★",
+        "★",
+        "★",
+        "★",
+        "☆"
+      ]
+    },
+    {
+      "id": "E4C7784E-66A0-4D44-87D0-3E072F5FEF43",
+      "url": "https://www.nps.gov/adam/index.htm",
+      "fullName": "Adams National Historical Park",
+      "parkCode": "adam",
+      "description": "From the sweet little farm at the foot of Penn’s Hill to the gentleman’s country estate at Peace field, Adams National Historical Park is the story of “heroes, statesman, philosophers … and learned women” whose ideas and actions helped to transform thirteen disparate colonies into one united nation.",
+      "latitude": "42.2553961",
+      "longitude": "-71.01160356",
+      "latLong": "lat:42.2553961, long:-71.01160356",
+      "activities": [
+        {
+          "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+          "name": "Guided Tours"
+        },
+        {
+          "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+          "name": "Living History"
+        },
+        {
+          "id": "28880A5B-3D29-41AC-BD8B-24743E7A070F",
+          "name": "First Person Interpretation"
+        },
+        {
+          "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+          "name": "Park Film"
+        },
+        {
+          "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+          "name": "Shopping"
+        },
+        {
+          "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+          "name": "Bookstore and Park Store"
+        }
+      ],
+      "topics": [
+        {
+          "id": "F3883A66-A7CB-461B-868E-1B5932224B25",
+          "name": "American Revolution"
+        },
+        {
+          "id": "7DA81DAB-5045-4953-9C20-36590AD9FA95",
+          "name": "Women's History"
+        }
+      ],
+      "states": "MA",
+      "contacts": {
+        "phoneNumbers": [
+          {
+            "phoneNumber": "617-773-1177",
+            "description": "",
+            "extension": "",
+            "type": "Voice"
+          }
+        ],
+        "emailAddresses": [
+          {
+            "description": "",
+            "emailAddress": "ADAM_Visitor_Center@nps.gov"
+          }
+        ]
+      },
+      "entranceFees": [
+        {
+          "cost": "15.00",
+          "description": "2021 Update: Entrance Fees are waived for 2021.  As a result, America the Beautiful Passes are not currently available at Adams National Historical Park.\n\nThe entrance fee is for all visitors age 16 and older.  Children under 16 are free. Credit or Debit Card only.",
+          "title": "Individual Entrance Fee - 2021 Update"
+        }
+      ],
+      "entrancePasses": [],
+      "fees": [],
+      "directionsInfo": "Traveling on U.S. Interstate 93, take exit 7 - Route 3 South to Braintree and Cape Cod. Take the first exit off Route 3 south - exit 42 - and follow signs toward Quincy Center. Continue straight on Burgin Parkway through six traffic lights. At the seventh traffic light, turn right onto Dimmock Street. Follow Dimmock Street one block and turn right onto Hancock Street. The National Park Service Visitor Center, located at 1250 Hancock Street on your left. Validated parking is in the garage to the rear.",
+      "directionsUrl": "http://www.nps.gov/adam/planyourvisit/directions.htm",
+      "operatingHours": [
+        {
+          "exceptions": [
+            {
+              "exceptionHours": {
+                "wednesday": "Closed",
+                "monday": "Closed",
+                "thursday": "Closed",
+                "sunday": "Closed",
+                "tuesday": "Closed",
+                "friday": "Closed",
+                "saturday": "Closed"
+              },
+              "startDate": "2023-01-02",
+              "name": "New Year's Day",
+              "endDate": "2023-01-02"
+            },
+            {
+              "exceptionHours": {
+                "wednesday": "Closed",
+                "monday": "Closed",
+                "thursday": "Closed",
+                "sunday": "Closed",
+                "tuesday": "Closed",
+                "friday": "Closed",
+                "saturday": "Closed"
+              },
+              "startDate": "2023-01-16",
+              "name": "Birthday of Martin Luther King, Jr.",
+              "endDate": "2023-01-16"
+            },
+            {
+              "exceptionHours": {
+                "wednesday": "Closed",
+                "monday": "Closed",
+                "thursday": "Closed",
+                "sunday": "Closed",
+                "tuesday": "Closed",
+                "friday": "Closed",
+                "saturday": "Closed"
+              },
+              "startDate": "2023-02-20",
+              "name": "Presidents' Day",
+              "endDate": "2023-02-20"
+            },
+            {
+              "exceptionHours": {
+                "wednesday": "Closed",
+                "monday": "Closed",
+                "thursday": "Closed",
+                "sunday": "Closed",
+                "tuesday": "Closed",
+                "friday": "Closed",
+                "saturday": "Closed"
+              },
+              "startDate": "2022-11-11",
+              "name": "Veterans Day",
+              "endDate": "2022-11-11"
+            },
+            {
+              "exceptionHours": {
+                "wednesday": "Closed",
+                "monday": "Closed",
+                "thursday": "Closed",
+                "sunday": "Closed",
+                "tuesday": "Closed",
+                "friday": "Closed",
+                "saturday": "Closed"
+              },
+              "startDate": "2022-11-24",
+              "name": "Thanksgiving Day",
+              "endDate": "2022-11-24"
+            },
+            {
+              "exceptionHours": {
+                "wednesday": "Closed",
+                "monday": "Closed",
+                "thursday": "Closed",
+                "sunday": "Closed",
+                "tuesday": "Closed",
+                "friday": "Closed",
+                "saturday": "Closed"
+              },
+              "startDate": "2022-12-26",
+              "name": "Christmas Day",
+              "endDate": "2022-12-26"
+            }
+          ],
+          "description": "Presently the grounds are available to the public from dawn until dusk. Visit the Old House at 135 Adams Street and the birthplaces of John Adams and John Quincy Adams at 133 Franklin St. Street parking is available at both locations. House tours are finished for the season and expected to resume in May 2022. \n\nThe Visitor Center in Quincy Center is open from Monday - Friday, 11am - 3pm. The LAZ garage for parking is accessed from Saville Ave. Parking validated for free.",
+          "standardHours": {
+            "wednesday": "9:00AM - 5:00PM",
+            "monday": "9:00AM - 5:00PM",
+            "thursday": "9:00AM - 5:00PM",
+            "sunday": "9:00AM - 5:00PM",
+            "tuesday": "9:00AM - 5:00PM",
+            "friday": "9:00AM - 5:00PM",
+            "saturday": "9:00AM - 5:00PM"
+          },
+          "name": "Homes Closed, Grounds & Visitor Center Open"
+        }
+      ],
+      "addresses": [
+        {
+          "postalCode": "02169",
+          "city": "Quincy",
+          "stateCode": "MA",
+          "line1": "1250 Hancock Street",
+          "type": "Physical",
+          "line3": "",
+          "line2": ""
+        },
+        {
+          "postalCode": "02169",
+          "city": "Quincy",
+          "stateCode": "MA",
+          "line1": "135 Adams Street",
+          "type": "Mailing",
+          "line3": "",
+          "line2": ""
+        }
+      ],
+      "images": [
+        {
+          "credit": "NPS Photo",
+          "title": "The John and John Quincy Adams Birthplaces",
+          "altText": "The Birthplaces of Presidents John Adams (right) and John Quincy Adams (left)",
+          "caption": "The Birthplaces of John and John Quincy Adams sit right next  to each other on Franklin Street.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C7C7416-1DD8-B71B-0B1B30D0827F7C74.jpg"
+        },
+        {
+          "credit": "NPS Photo",
+          "title": "The Birthplace of John Adams",
+          "altText": "The Birthplace of John Adams",
+          "caption": "The house where President John Adams was born in 1735.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C7C7565-1DD8-B71B-0BEC729A3E865792.jpg"
+        },
+        {
+          "credit": "NPS Photo",
+          "title": "The Birthplace of John Quincy Adams",
+          "altText": "The Birthplace of John Quincy Adams",
+          "caption": "The house where President John Quincy Adams was born in 1767.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C7C76BE-1DD8-B71B-0B6DFACFB45AC5A4.jpg"
+        },
+        {
+          "credit": "NPS Photo",
+          "title": "Old House at Peace field",
+          "altText": "A view of Old House at Peace field",
+          "caption": "Old House at Peace field, where four generations of the Adams family lived from 1788 to 1927.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C7C780E-1DD8-B71B-0B18B8DB9F39704F.jpg"
+        },
+        {
+          "credit": "NPS Photo / Betty Brown",
+          "title": "The Paneled Room",
+          "altText": "The Paneled Room located inside Old House at Peace field.",
+          "caption": "The Paneled Room greets everyone who enters Old House at Peace field.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C7C7945-1DD8-B71B-0BE14B48DD78B777.jpg"
+        },
+        {
+          "credit": "NPS Photo",
+          "title": "The Stone Library",
+          "altText": "The Stone Library located outside Old House at Peace field.",
+          "caption": "The Stone Library houses up to 14,000 books belonging to the Adams family.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C7C7A77-1DD8-B71B-0BDA92321AD899C5.jpg"
+        },
+        {
+          "credit": "NPS Photo",
+          "title": "Inside the Stone Library",
+          "altText": "Inside the Stone Library",
+          "caption": "A view into the Stone Library",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C7C7BE3-1DD8-B71B-0B864F7398605B7E.jpg"
+        },
+        {
+          "credit": "NPS Photo",
+          "title": "The Gardens Located at Old House at Peace field",
+          "altText": "The gardens located at Old House at Peace field.",
+          "caption": "The gardens located by Old House at Peace field bloom in every color you can imagine.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C7C7D4E-1DD8-B71B-0B48B5CDE41703D7.jpg"
+        }
+      ],
+      "weatherInfo": "Be prepared for hot, humid weather. The historic homes are not air conditioned. While the visitor center remains open all year, the historic homes are closed from November 1 through April 30.",
+      "name": "Adams",
+      "designation": "National Historical Park",
       "haveBeen": "true"
+    },
+    {
+      "id": "7D6098F9-3F75-4775-A56D-CD9C7F9A9488",
+      "url": "https://www.nps.gov/anch/index.htm",
+      "fullName": "Alaska Public Lands",
+      "parkCode": "anch",
+      "description": "Alaska’s parks, forests, and refuges are rich and varied. The Alaska Public Lands Information Centers help visitors and residents to have meaningful, safe, enjoyable experiences on public lands, and encourages them to sustain the natural and cultural resources of Alaska. These centers provide trip-planning, interpretation, and education for all ages.",
+      "latitude": "61.2188",
+      "longitude": "-149.894536",
+      "latLong": "lat:61.2188, long:-149.894536",
+      "activities": [],
+      "topics": [],
+      "states": "AK",
+      "contacts": {
+        "phoneNumbers": [
+          {
+            "phoneNumber": "9076443661",
+            "description": "",
+            "extension": "",
+            "type": "Voice"
+          },
+          {
+            "phoneNumber": "9072712744",
+            "description": "",
+            "extension": "",
+            "type": "Fax"
+          },
+          {
+            "phoneNumber": "8668696887",
+            "description": "",
+            "extension": "",
+            "type": "TTY"
+          }
+        ],
+        "emailAddresses": [
+          {
+            "description": "",
+            "emailAddress": "anch_web_mail@nps.gov"
+          }
+        ]
+      },
+      "entranceFees": [
+        {
+          "cost": "0.00",
+          "description": "No entry fee to visit the visitors center",
+          "title": "Free Admittance"
+        }
+      ],
+      "entrancePasses": [],
+      "fees": [],
+      "directionsInfo": "Anchorage APLIC is located in downtown Anchorage on 4th Avenue, in the Federal Building. Fairbanks APLIC is located in downtown Fairbanks on the corner of Dunkel Street and Wendell Avenue, near the Chena River.",
+      "directionsUrl": "http://alaskacenters.gov/anchorage-directions.cfm",
+      "operatingHours": [
+        {
+          "exceptions": [
+            {
+              "exceptionHours": {
+                "wednesday": "Closed",
+                "monday": "Closed",
+                "thursday": "Closed",
+                "sunday": "Closed",
+                "tuesday": "Closed",
+                "friday": "Closed",
+                "saturday": "Closed"
+              },
+              "startDate": "2021-12-15",
+              "name": "COVID-19 Closure",
+              "endDate": "2022-05-01"
+            }
+          ],
+          "description": "Summer Hours: 9-5, Every Day, Late May to Mid September, Open Federal Holidays\nWinter Hours: 10-5, Mon-Thur, closed for lunch 12-1, September to Early May, Closed Federal Holidays",
+          "standardHours": {
+            "wednesday": "Closed",
+            "monday": "Closed",
+            "thursday": "Closed",
+            "sunday": "Closed",
+            "tuesday": "Closed",
+            "friday": "Closed",
+            "saturday": "Closed"
+          },
+          "name": "Anchorage Hours"
+        },
+        {
+          "exceptions": [
+            {
+              "exceptionHours": {
+                "wednesday": "8:00AM - 5:00PM",
+                "monday": "8:00AM - 5:00PM",
+                "thursday": "8:00AM - 5:00PM",
+                "sunday": "Closed",
+                "tuesday": "8:00AM - 5:00PM",
+                "friday": "8:00AM - 5:00PM",
+                "saturday": "8:00AM - 5:00PM"
+              },
+              "startDate": "2021-09-05",
+              "name": "Winter Hours",
+              "endDate": "2022-05-30"
+            }
+          ],
+          "description": "Summer Hours: 8-6, Every Day, Memorial Day through Labor Day, Open Federal Holidays\nWinter Hours: 8-5, Mon-Sat, Labor Day through Memorial Day, Closed Federal Holidays\n\n101 Dunkel Street Suite 110\nFairbanks, AK 99701\n\nTelephone: 907.459.3730\nFax: 907.459.3729\nEmail: fair_interpretation@nps.gov",
+          "standardHours": {
+            "wednesday": "8:00AM - 6:00PM",
+            "monday": "8:00AM - 6:00PM",
+            "thursday": "8:00AM - 6:00PM",
+            "sunday": "8:00AM - 6:00PM",
+            "tuesday": "8:00AM - 6:00PM",
+            "friday": "8:00AM - 6:00PM",
+            "saturday": "8:00AM - 6:00PM"
+          },
+          "name": "Fairbanks Hours"
+        }
+      ],
+      "addresses": [
+        {
+          "postalCode": "99501",
+          "city": "Anchorage",
+          "stateCode": "AK",
+          "line1": "605 West 4th Avenue",
+          "type": "Physical",
+          "line3": "",
+          "line2": "Suite 105"
+        },
+        {
+          "postalCode": "99501",
+          "city": "Anchorage",
+          "stateCode": "AK",
+          "line1": "605 West 4th Avenue",
+          "type": "Mailing",
+          "line3": "",
+          "line2": "Suite 105"
+        }
+      ],
+      "images": [
+        {
+          "credit": "NPS/Josh Spice",
+          "title": "Hikers on Angel Rocks",
+          "altText": "Two Hikers stand on top of a very large granite boulder, looking out across the landscape",
+          "caption": "Hikers on top of Angel Rocks near Fairbanks look out across the landscape of Chena River State Recreation Area",
+          "url": "https://www.nps.gov/common/uploads/structured_data/2595FA12-DF7A-1B6C-55D8F41ABCA2E011.jpg"
+        },
+        {
+          "credit": "NPS",
+          "title": "Anchorage APLIC",
+          "altText": "Front of the Anchorage Federal Building, housing the Anchorage APLIC",
+          "caption": "The Anchorage APLIC is located inside the Federal Building",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C86397B-1DD8-B71B-0B8F02FE5D76B46D.jpg"
+        },
+        {
+          "credit": "NPS/Josh Spice",
+          "title": "Fairbanks APLIC",
+          "altText": "Fairbanks Alaska Public Lands Information Center, located inside the Morris Thompson Cultural & Visi",
+          "caption": "Fairbanks Alaska Public Lands Information Center, located inside the Morris Thompson Cultural & Visitors Center, in summer",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C860F61-1DD8-B71B-0B4E7399BE80347C.jpg"
+        }
+      ],
+      "weatherInfo": "Visitors center is located inside the Federal Building and weather conditions are seasonal conditions of the Anchorage area, outside the facility.",
+      "name": "Alaska Public Lands",
+      "designation": "",
+      "haveBeen": "true",
+      "starRating": [
+        "★",
+        "★",
+        "★",
+        "☆",
+        "☆"
+      ]
+    },
+    {
+      "id": "64B9F127-31ED-43C9-882D-D7CD471AF314",
+      "url": "https://www.nps.gov/agfo/index.htm",
+      "fullName": "Agate Fossil Beds National Monument",
+      "parkCode": "agfo",
+      "description": "In the early 1900s, paleontologists unearthed the Age of Mammals when they found full skeletons of extinct Miocene mammals in the hills of Nebraska -- species previously only known through fragments. At the same time, an age of friendship began between rancher James Cook and Chief Red Cloud of the Lakota. These two unprecedented events are preserved and protected here... at Agate Fossil Beds.",
+      "latitude": "42.42170419",
+      "longitude": "-103.753886",
+      "latLong": "lat:42.42170419, long:-103.753886",
+      "activities": [
+        {
+          "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+          "name": "Arts and Culture"
+        },
+        {
+          "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+          "name": "Cultural Demonstrations"
+        },
+        {
+          "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+          "name": "Astronomy"
+        },
+        {
+          "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+          "name": "Stargazing"
+        },
+        {
+          "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+          "name": "Food"
+        },
+        {
+          "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+          "name": "Picnicking"
+        },
+        {
+          "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+          "name": "Guided Tours"
+        },
+        {
+          "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+          "name": "Self-Guided Tours - Walking"
+        },
+        {
+          "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+          "name": "Hiking"
+        },
+        {
+          "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+          "name": "Junior Ranger Program"
+        },
+        {
+          "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+          "name": "Wildlife Watching"
+        },
+        {
+          "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+          "name": "Birdwatching"
+        },
+        {
+          "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+          "name": "Park Film"
+        },
+        {
+          "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+          "name": "Museum Exhibits"
+        },
+        {
+          "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+          "name": "Shopping"
+        },
+        {
+          "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+          "name": "Bookstore and Park Store"
+        }
+      ],
+      "topics": [
+        {
+          "id": "1F833C99-A75D-4F9E-9256-B96523485466",
+          "name": "Farming and  Agriculture"
+        },
+        {
+          "id": "E4E84C87-6737-4C37-9157-5962648A35F2",
+          "name": "Ranches"
+        },
+        {
+          "id": "A1BAF33E-EA84-4608-A888-4CEE9541F027",
+          "name": "Native American Heritage"
+        },
+        {
+          "id": "C9C749E3-39C3-45F7-BCC5-9A609E30AA05",
+          "name": "Westward Expansion"
+        },
+        {
+          "id": "D1722DD1-E314-4B6D-8116-DED86305C4A4",
+          "name": "Homesteading"
+        },
+        {
+          "id": "0D00073E-18C3-46E5-8727-2F87B112DDC6",
+          "name": "Animals"
+        },
+        {
+          "id": "957EF2BD-AC6C-4B7B-BD9A-87593ADC6691",
+          "name": "Birds"
+        },
+        {
+          "id": "393F60FB-80D6-46F7-B0FB-BBF3C90F59FD",
+          "name": "Tortoises and Turtles"
+        },
+        {
+          "id": "F6D3A52E-608F-47D6-96DF-1FD64122A2FC",
+          "name": "Fossils and Paleontology"
+        },
+        {
+          "id": "F0F97E32-2F29-41B4-AF98-9FBE8DAB36B1",
+          "name": "Geology"
+        },
+        {
+          "id": "94262026-92F5-48E9-90EF-01CEAEFBA4FF",
+          "name": "Grasslands"
+        },
+        {
+          "id": "1AEDC86F-5792-487F-8CDF-9E92CAB97ACE",
+          "name": "Prairies"
+        },
+        {
+          "id": "A7359FC4-DAD8-45F5-AF15-7FF62F816ED3",
+          "name": "Night Sky"
+        },
+        {
+          "id": "A155238F-0DD2-4610-9B87-05FCE1C59283",
+          "name": "River and Riparian"
+        },
+        {
+          "id": "4244F489-6813-4B7A-9D0C-20CE098C8FFF",
+          "name": "Rock Landscapes and Features"
+        },
+        {
+          "id": "9C9FCBB6-360B-4743-8155-6F9341CBE01B",
+          "name": "Scenic Views"
+        }
+      ],
+      "states": "NE",
+      "contacts": {
+        "phoneNumbers": [
+          {
+            "phoneNumber": "3086654113",
+            "description": "",
+            "extension": "",
+            "type": "Voice"
+          },
+          {
+            "phoneNumber": "3086654114",
+            "description": "",
+            "extension": "",
+            "type": "Fax"
+          }
+        ],
+        "emailAddresses": [
+          {
+            "description": "",
+            "emailAddress": "agfo_ranger_activities@nps.gov"
+          }
+        ]
+      },
+      "entranceFees": [
+        {
+          "cost": "0.00",
+          "description": "There is no fee for the visitor center or trails at Agate Fossil Beds National Monument.",
+          "title": "Admission is free."
+        }
+      ],
+      "entrancePasses": [],
+      "fees": [],
+      "directionsInfo": "From US 20: 22 miles south of Harrison, NE on State Hwy 29, then three miles east on River Road (paved) From US 26: 34 miles north of Mitchell, NE on State Hwy 29, then three miles east on River Road (paved). From State Hwy 71: 25 miles west on the unpaved portion of River Road.",
+      "directionsUrl": "http://www.nps.gov/agfo/planyourvisit/directions.htm",
+      "operatingHours": [
+        {
+          "exceptions": [],
+          "description": "The park's two trails are open from dawn till dusk every day.\n\nVisitor Center features Miocene Mammal fossils, a 12 minute movie, and the James H. Cook Collection,  a unique collection of American Indian artifacts that were gifts to James Cook and his family.",
+          "standardHours": {
+            "wednesday": "Sunrise to Sunset",
+            "monday": "Sunrise to Sunset",
+            "thursday": "Sunrise to Sunset",
+            "sunday": "Sunrise to Sunset",
+            "tuesday": "Sunrise to Sunset",
+            "friday": "Sunrise to Sunset",
+            "saturday": "Sunrise to Sunset"
+          },
+          "name": "Trails"
+        },
+        {
+          "exceptions": [
+            {
+              "exceptionHours": {
+                "wednesday": "8:00AM - 4:00PM",
+                "monday": "8:00AM - 4:00PM",
+                "thursday": "8:00AM - 4:00PM",
+                "sunday": "8:00AM - 4:00PM",
+                "tuesday": "8:00AM - 4:00PM",
+                "friday": "8:00AM - 4:00PM",
+                "saturday": "8:00AM - 4:00PM"
+              },
+              "startDate": "2021-10-01",
+              "name": "Winter Hours",
+              "endDate": "2022-05-14"
+            }
+          ],
+          "description": "Summer hours to Sep 30: 9:00am to 5:00pm daily. Please note Agate Fossil Beds is in the Mountain Time Zone.",
+          "standardHours": {
+            "wednesday": "9:00AM - 5:00PM",
+            "monday": "9:00AM - 5:00PM",
+            "thursday": "9:00AM - 5:00PM",
+            "sunday": "9:00AM - 5:00PM",
+            "tuesday": "9:00AM - 5:00PM",
+            "friday": "9:00AM - 5:00PM",
+            "saturday": "9:00AM - 5:00PM"
+          },
+          "name": "Visitor Center"
+        }
+      ],
+      "addresses": [
+        {
+          "postalCode": "69346",
+          "city": "Harrison",
+          "stateCode": "NE",
+          "line1": "301 River Road",
+          "type": "Physical",
+          "line3": "",
+          "line2": ""
+        },
+        {
+          "postalCode": "69346",
+          "city": "Harrison",
+          "stateCode": "NE",
+          "line1": "301 River Road",
+          "type": "Mailing",
+          "line3": "",
+          "line2": ""
+        }
+      ],
+      "images": [
+        {
+          "credit": "NPS Photo",
+          "title": "Visitor Center on the Prairie",
+          "altText": "The visitor center sits in the middle of mixed grass prairie.",
+          "caption": "From the Fossil Hills Trail the Visitor Center is a ship in a sea of prairie grasses.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C7A058F-1DD8-B71B-0B188ED102F7285F.jpg"
+        },
+        {
+          "credit": "NPS Photo",
+          "title": "The Agate Fossil Hills and Tipis",
+          "altText": "Tipis and Fossil Hills represent the two subjects that Agate Fossil Beds interprets.",
+          "caption": "One of the first impressions that visitors have are the tipis and the Fossil Hills.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C7A06A9-1DD8-B71B-0BA914D99661189C.jpg"
+        },
+        {
+          "credit": "NPS Photo",
+          "title": "A July Storm Passes",
+          "altText": "Thunderheads are common in July.",
+          "caption": "Summer storms include thunderheads and lightning and can be exciting and dangerous.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C7A07B9-1DD8-B71B-0B077C3CA4979281.jpg"
+        },
+        {
+          "credit": "NPS Photo",
+          "title": "Dinohyus in the Visitor Center Fossil Diorama",
+          "altText": "The Dinohyus was a scavenger, nicknamed \"Terrible Pig\"",
+          "caption": "Visitors stare in wonder at the huge head of the \"apex\" predator of the plains some 20 million years ago.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C7A08CC-1DD8-B71B-0B129817C3E756C3.jpg"
+        },
+        {
+          "credit": "NPS Photo",
+          "title": "The James H. Cook collection",
+          "altText": "This buckskin shirt decorated with quills was worn by Red Cloud.",
+          "caption": "Visitors agree that this shirt decorated with quillwork and worn by Red Cloud of the Oglala Lakota is a priceless piece of history.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C7A0A12-1DD8-B71B-0BC1CC6CDF2CFD4E.jpg"
+        }
+      ],
+      "weatherInfo": "Summers can be very warm, high 90's to 100 with the frequent afternoon thunderstorms. Plan to hike early and come down from the higher points if storms threaten. Winter temperatures can dip as low as -20 with snow and wind. Heaviest snows can be expected in late Spring.",
+      "name": "Agate Fossil Beds",
+      "designation": "National Monument",
+      "haveBeen": "true",
+      "starRating": [
+        "★",
+        "★",
+        "★",
+        "★",
+        "★"
+      ]
     }
   ]
 }

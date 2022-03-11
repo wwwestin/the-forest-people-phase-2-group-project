@@ -35,7 +35,15 @@ useEffect(() => {
 
   
     function addToTrip(park){
-        setDataBaseParks([...databaseParks, park])
+        setDataBaseParks(databaseParks => {
+            if(databaseParks.some(dbPark => dbPark.id === park.id)){
+               return databaseParks.map(dbPark => {
+                   return dbPark.id ===  park.id ? park : dbPark;
+               })
+            } else {
+                return [...databaseParks, park]
+            }
+        })
     }
 
 

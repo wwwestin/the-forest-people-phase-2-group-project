@@ -32,6 +32,7 @@ function NationalPark({ imageUrl, imageAlt, name, park, onFocus, handleClick }) 
             body: JSON.stringify(reviewPark)
         }
         )
+        handleClick(reviewPark);
     }
 
     function leaveReview(review, id){

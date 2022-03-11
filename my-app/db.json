@@ -676,6 +676,7 @@
       ]
     },
     {
+<<<<<<< HEAD
       "id": "E4C7784E-66A0-4D44-87D0-3E072F5FEF43",
       "url": "https://www.nps.gov/adam/index.htm",
       "fullName": "Adams National Historical Park",
@@ -1282,6 +1283,8 @@
       ]
     },
     {
+=======
+>>>>>>> 2b6b1cfee64717e01eb51c52fcb91294d43d50bd
       "id": "E6E1D22A-7A89-47F8-813C-B611059A8CF9",
       "url": "https://www.nps.gov/afbg/index.htm",
       "fullName": "African Burial Ground National Monument",
@@ -1540,13 +1543,21 @@
       "weatherInfo": "http://forecast.weather.gov/MapClick.php?CityName=New+York&state=NY&site=OKX&lat=40.7198&lon=-73.993#.Vqj8OvkrJlZ",
       "name": "African Burial Ground",
       "designation": "National Monument",
+<<<<<<< HEAD
       "haveBeen": true,
+=======
+      "haveBeen": "true",
+>>>>>>> 2b6b1cfee64717e01eb51c52fcb91294d43d50bd
       "starRating": [
         "★",
         "★",
         "★",
         "★",
+<<<<<<< HEAD
         "☆"
+=======
+        "★"
+>>>>>>> 2b6b1cfee64717e01eb51c52fcb91294d43d50bd
       ]
     }
   ]
